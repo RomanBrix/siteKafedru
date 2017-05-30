@@ -1,0 +1,113 @@
+@import 'vendor';
+@import 'vendor_theme';
+@import 'vars';
+
+html{
+  min-height: 100%;
+}
+body{
+  //overflow: auto;
+  #mountNode {
+    //width:100%;
+    .navbar-brand{
+      padding: 5px 10px;
+      img{
+        max-width: 100px;
+        max-height: 40px;
+      }
+    }
+    .navbar-static-top{
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    .sliderContainer {
+      margin-top: -20px;
+      .carousel-inner, .item {
+        max-height: 600px;
+        img {
+          top: -60px;
+          position: relative
+        }
+      }
+    }
+    .Hello {
+      margin-top: 20px;
+      h3, p{
+        text-align: center;
+      }
+    }
+    .footer{
+      //width: 100%;
+      /* Set the fixed height of the footer here */
+      //height: 60px;
+
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);
+      #made{
+        margin-top: -5px;
+        font-size: 0.6em;
+        text-align: center;
+      }
+      .row{
+        margin: 10px 0 0px 0px;
+        text-align: center;
+        color: $textColor;
+        a{
+          color: $textColor;
+        }
+        a:hover{
+          text-decoration: none;
+          color: $linkHover;
+        }
+      }
+      .row:nth-child(2){
+        margin: 0;
+      }
+    }
+  }
+
+  .Social{
+    text-align: center;
+  }
+  div.fb-follow.fb_iframe_widget{
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+    padding-top: 2px;
+  }
+  .bluePanel {
+    border-color: $blue800;
+     .panel-heading {
+      //background: $blue800 !important;
+      text-align: left;
+      color: $textColor;
+      border-color: $blue800;
+      background-image: linear-gradient(to bottom, $blue800 0, $blueA400 100%) !important;
+      background-image: -webkit-linear-gradient(top, $blue800 0, $blueA400 100%);
+      background-image: -o-linear-gradient(top, $blue800 0, $blueA400 100%);
+      background-image: -webkit-gradient(linear, left top, left bottom, from($blue800), to($blueA400));
+      background-image: linear-gradient(to bottom, $blue800 0, $blueA400 100%);
+    }
+  }
+  div.col-md-4.col-xs-6:nth-child(4){
+    clear: both;
+  }
+  #PDF{
+    position: relative;
+    left: 50%;
+    margin-left: -25px;
+    img{
+      margin-bottom: 20px;
+    }
+  }
+  .ContactInRow{
+    margin-right: 10px;
+  }
+  .vertical-line{
+    border-top: 3px solid $orangeA700;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
