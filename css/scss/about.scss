@@ -1,0 +1,28 @@
+.container{
+  min-height: 10vh;
+  .main_Tab{
+    margin-bottom: 20px;
+    .link_word {
+      position: relative;
+      left: 50%;
+      margin-left: -25px;
+      margin-top: 15px;
+      .WORD {
+        width: 50px;
+
+      }
+    }
+    &>div:nth-child(1){
+      background-color: #00a4da !important;
+    }
+    &>div:nth-child(2){
+      &>div:nth-child(1){
+        background-color: #ff6d00 !important;
+
+      }
+    }
+    &>div:nth-child(3){
+      min-height: 450px !important;
+    }
+  }
+}

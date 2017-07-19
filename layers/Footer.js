@@ -41,7 +41,7 @@ render(){
                         <Col md={3}  xs={3}>
                             <span id="Phone">
                                 <Phone color={ blueA400 }/>
-                                <p>096&nbsp;923&nbsp;96&nbsp;67</p>
+                                <p><a href="tel:0969239667">096&nbsp;923&nbsp;96&nbsp;67</a></p>
                             </span>
                         </Col>
                         <Col md={3}  xs={3}>

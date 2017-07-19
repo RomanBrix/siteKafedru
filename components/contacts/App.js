@@ -21,9 +21,8 @@ export default class App extends Component {
         xhr.onerror = ()=>{
             alert('Спробуйте через 5 хвилин');
         }
-
-
     }
+    
     render(){
         injectTapEventPlugin();
         return (

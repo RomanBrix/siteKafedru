@@ -8,6 +8,8 @@ import {
 } from 'react-bootstrap';
 import {
     MAIN,
+    ABOUT,
+    APPLICANTS,
     CONTACTS,
     NEWS,
     LECTURERS,
@@ -31,6 +33,8 @@ export default class Header extends Component {
                 <Navbar.Collapse>
                     <Nav>
                         <li role="presentation"><a href={MAIN}>Головна</a></li>
+                        <li role="presentation"><a href={ABOUT}>Про кафедру</a></li>
+                        <li role="presentation"><a href={APPLICANTS}>Абітурієнтам</a></li>
                         <li role="presentation"><a href={LECTURERS}>Викладачі</a></li>
                         <li role="presentation"><a href={PROGRESS}>Розвиток Кафедри</a></li>
                         <NavDropdown eventKey={3} title="Графік" id="basic-nav-dropdown">

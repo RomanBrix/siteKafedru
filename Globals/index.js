@@ -1,8 +1,10 @@
 //href to html
 export const MAIN = 'index.html';
+export const ABOUT = 'about.html';
 export const CONTACTS = 'contacts.html';
 export const NEWS = 'news.html';
 export const LECTURERS = 'lecturers.html';
+export const APPLICANTS = 'applicants.html';
 export const CONSULTATION = 'consultation.html';
 export const PUBLIC_LESSON = 'public_lesson.html';
 export const PROGRESS = 'progress.html';

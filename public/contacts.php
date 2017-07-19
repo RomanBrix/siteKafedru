@@ -1,5 +1,5 @@
 <?php
-   $to = 'stetcukroman@mail.ru';
+   $to = 'kafedra.pis@gmail.com';
    if (array_key_exists('email', $_POST)) {
 
        $subject = 'Пользователь подписался на обновления ';

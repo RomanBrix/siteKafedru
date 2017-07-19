@@ -12,7 +12,7 @@ export default class Slider extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            index: 1,
+            index: 0,
             direction: null
         };
     }
@@ -34,15 +34,6 @@ export default class Slider extends Component {
                 >
                     <Carousel.Item>
                         <img
-
-                            alt="SLIDER1"
-                            src={SLIDER1}/>
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-
                             alt="SLIDER2"
                             src={SLIDER2}/>
                         <Carousel.Caption>
@@ -50,14 +41,7 @@ export default class Slider extends Component {
                             <p>Які справді Вас навчать</p>
                         </Carousel.Caption>
                     </Carousel.Item>
-                    <Carousel.Item>
-                        <img
 
-                            alt="SLIDER3"
-                            src={ SLIDER3 }/>
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Carousel.Item>
                 </Carousel>
             );
         }

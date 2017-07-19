@@ -10,7 +10,9 @@ module.exports= {
         lecturers: './lecturers.js',
         consultation: './consultation.js',
         public_lesson: './public_lesson.js',
-        progress: './progress.js'
+        progress: './progress.js',
+        about: './about.js',
+        applicants: './applicants.js'
     },
     output: {
         path: path.join(__dirname, 'public'),

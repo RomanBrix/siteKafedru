@@ -6,7 +6,7 @@ import {
     Thumbnail,
     Button
 } from 'react-bootstrap';
-import { LECTURERS, FIT } from '../../Globals';
+import { ABOUT, FIT } from '../../Globals';
 
 export default class Hello extends Component {
     render(){
@@ -23,7 +23,7 @@ export default class Hello extends Component {
                         <h3>Вітаємо Вас на кафедрі прикладних інформаційних систем!</h3>
                         <p>Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем. Сподіваюсь, що наше спільне майбутнє  принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій</p>
                         <p>
-                            <Button bsStyle="primary" href={ LECTURERS }>Познайомитись</Button>
+                            <Button bsStyle="primary" href={ ABOUT }>Про кафедру</Button>
                         </p>
                     </Thumbnail>
                 </Col>
