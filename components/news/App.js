@@ -17,7 +17,7 @@ export default class App extends Component {
                     marginBottom: '15%'
 
                 }}/>
-                <Footer news={true}/>
+                <Footer />
             </div>
         );
     }

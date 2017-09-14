@@ -51,8 +51,9 @@ export default class Subscription extends Component {
         const styles = {
             button: {
                 position: 'relative',
-                left: '50%',
-                marginLeft: '-44px',
+                // left: '50%',
+                // marginLeft: '-44px',
+                width: '100%',
                 marginTop: '12px'
             }
         };
@@ -63,30 +64,21 @@ export default class Subscription extends Component {
             <div>
                 <TextField
                     hintText="example@gmail.com"
-                    floatingLabelText="E-mail"
+                    floatingLabelText="Підпишись на E-mail новини"
                     fullWidth={true}
                     name="Email"
                     underlineFocusStyle={{borderColor:orangeA700}}
                     underlineStyle={{borderColor: blueA400}}
                     floatingLabelFocusStyle={{color: orangeA700}}
-                    onChange={({ target })=>{
-                          if(target.value.length > 0){
-                              this.DisableFalse();
-                          }else {
-                              this.DisableTrue();
-                          }
-            }}
                     ref='EMAIL'
                 /><br/>
                     <RaisedButton
                         backgroundColor={blueA400}
                         icon={<MailOutLine color="white"/>}
                         style={styles.button}
-                        disabled={disable}
+
                         onTouchTap={()=>{
-
                            this.chek(this.send);
-
                         }}
                     />
             </div>

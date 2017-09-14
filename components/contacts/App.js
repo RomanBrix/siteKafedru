@@ -26,10 +26,12 @@ export default class App extends Component {
     render(){
         injectTapEventPlugin();
         return (
-            <div>
+            <div >
                 <Header/>
-                <Container send={this.send}/>
-                <Map/>
+                <div className="contact-main-containar">
+                    <Container send={this.send}/>
+                    <Map/>
+                </div>
                 <Footer/>
             </div>
         );

@@ -34,12 +34,17 @@ export default class Slider extends Component {
                 >
                     <Carousel.Item>
                         <img
-                            alt="SLIDER2"
-                            src={SLIDER2}/>
-                        <Carousel.Caption>
-                            <h3>Викладачі</h3>
-                            <p>Які справді Вас навчать</p>
-                        </Carousel.Caption>
+                            alt="SLIDER3"
+                            src={SLIDER3}/>
+                        {/* <Carousel.Caption> */}
+                            {/* <h3>Викладачі</h3> */}
+                            {/* <p>Які справді Вас навчать</p> */}
+                        {/* </Carousel.Caption> */}
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            alt="SLIDER1"
+                            src={SLIDER1}/>
                     </Carousel.Item>
 
                 </Carousel>

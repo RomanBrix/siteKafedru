@@ -16,7 +16,7 @@ export default class Contact extends Component {
             color: blueA400
         }
         return(
-            <Row className="vertical-line">
+            <Row className="vertical-line" style={{marginTop: "25px", paddingTop: '20px'}}>
                 <Col  md={4} xs={4}><Place style={style}/> вул. Ванди Василевської, 24, Київ, Україна</Col>
                 <Col  md={4} xs={4}> <Phone style={style}/> 0969239667</Col>
                 <Col  md={4} xs={4}><Email style={style}/> kafedra.pis@gmail.com</Col>

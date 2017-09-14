@@ -41,6 +41,7 @@ export default class CallBack extends Component {
                     underlineFocusStyle={{borderColor:orangeA700}}
                     underlineStyle={{borderColor: blueA400}}
                     floatingLabelFocusStyle={{color: orangeA700}}
+                    style={{marginTop: "10px"}}
                     ref="EMAIL"
                 /><br/>
                 <TextField
@@ -51,6 +52,7 @@ export default class CallBack extends Component {
                     floatingLabelFocusStyle={{color: orangeA700}}
                     multiLine={true}
                     fullWidth={true}
+                    style={{marginTop: "10px"}}
                     name="Message"
                     rows={2}
                     ref="MSG"
@@ -59,6 +61,7 @@ export default class CallBack extends Component {
                     backgroundColor={blueA400}
                     icon={<MailOutLine color="white"/>}
                     fullWidth={true}
+                    style={{marginTop: "20px"}}
                     onTouchTap={()=>{
                         this.check(send);
                     }}
