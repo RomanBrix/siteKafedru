@@ -10,8 +10,14 @@ import { ABOUT, FIT, } from '../../Globals';
 import { NEWS } from '../../Data';
 
 export default class Hello extends Component {
+
+    sorted(a,b){
+        return  a > b ?  1 : -1;
+    }
+
     render(){
-        const newsContainer = NEWS.map((item, index)=>{
+        const sortedNews = NEWS.sort(this.sorted);
+        const newsContainer = sortedNews.map((item, index)=>{
             if (index > 1) return;
             let newText = "";
             if(item.text.length > 75){

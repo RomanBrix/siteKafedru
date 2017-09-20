@@ -25,8 +25,13 @@ export default class Container extends Component {
             toggle: a
         })
     }
+
+    sorted(a,b){
+        return  a > b ?  1 : -1;
+    }
     render() {
-        const newsCont = NEWS.map((item, index)=>{
+        const sortedNews = NEWS.sort(this.sorted);        
+        const newsCont = sortedNews.map((item, index)=>{
         const { toggle } = this.state;
         return(
             <div className="news" key={index}>
@@ -37,7 +42,13 @@ export default class Container extends Component {
                     <h2>{item.title}</h2>
                     <h3>{item.date}</h3>
                     <p>{item.text}</p>
-                    <p>{item.end}</p>
+                    <p>{item.end}
+                    {item.file ? 
+                        <a href={item.file} target="_blank"> ТУТ </a>
+                        : ""
+                    }
+                    </p>
+                    
                 </div>
             </div>
         ) 
@@ -46,8 +57,10 @@ export default class Container extends Component {
         const active = {
             backgroundColor: '#343f64',
             color: 'white'
-        }      
-        const eventsCont = EVENTS.map((item, index)=>{
+        }    
+          
+        const sortedEvents = EVENTS.sort(this.sorted);
+        const eventsCont = sortedEvents.map((item, index)=>{
             return(
                 <div className="news" key={index}>
                     <div className="logo">

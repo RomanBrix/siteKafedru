@@ -11159,6 +11159,13 @@ var LAHNO = exports.LAHNO = './src/teachers/lahno.jpg';
 var PECHENENKO = exports.PECHENENKO = './src/teachers/pechenenko.jpg';
 var SENCHENKO = exports.SENCHENKO = './src/teachers/senchenko.jpg';
 
+var SAIKO = exports.SAIKO = './src/teachers/saiko.jpg';
+var SOKULSKY = exports.SOKULSKY = './src/teachers/sokulsky.jpg';
+var DOMRACHEV = exports.DOMRACHEV = './src/teachers/domrachev.jpg';
+var PIROG = exports.PIROG = './src/teachers/pirog.jpg';
+var MIRONOVA = exports.MIRONOVA = './src/teachers/mironova.jpg';
+var FENIK = exports.FENIK = './src/teachers/fenik.jpg';
+
 /***/ }),
 /* 139 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -21519,7 +21526,7 @@ exports.i(__webpack_require__(292), "");
 exports.i(__webpack_require__(291), "");
 
 // module
-exports.push([module.i, "html {\n  min-height: 100%; }\n\nbody #mountNode {\n  padding: 0;\n  margin: 0; }\n  body #mountNode .navbar {\n    padding: 10px 25px;\n    background-color: #343f64;\n    background-image: none; }\n    body #mountNode .navbar .open {\n      background-color: #343f64;\n      background-image: none; }\n      body #mountNode .navbar .open #basic-nav-dropdown {\n        background-color: #343f64;\n        background-image: none; }\n      body #mountNode .navbar .open .dropdown-menu {\n        background-color: #343f64;\n        background-image: none; }\n        body #mountNode .navbar .open .dropdown-menu li a {\n          transition: .25s; }\n        body #mountNode .navbar .open .dropdown-menu li a:hover, body #mountNode .navbar .open .dropdown-menu li a:focus {\n          background-color: #3d4a75 !important;\n          background-image: none; }\n    body #mountNode .navbar .navbar-collapse ul li a {\n      color: white;\n      transition: .25s; }\n  body #mountNode .navbar-brand {\n    padding: 5px 10px; }\n    body #mountNode .navbar-brand img {\n      max-width: 100px;\n      max-height: 40px; }\n  body #mountNode .navbar-static-top {\n    border-bottom-left-radius: 3px;\n    border-bottom-right-radius: 3px; }\n  body #mountNode .sliderContainer {\n    margin-top: -20px; }\n    body #mountNode .sliderContainer .carousel-inner, body #mountNode .sliderContainer .item {\n      max-height: 600px; }\n      body #mountNode .sliderContainer .carousel-inner img, body #mountNode .sliderContainer .item img {\n        top: -60px;\n        width: 100%;\n        position: relative; }\n  body #mountNode .Hello {\n    margin-top: 20px; }\n    body #mountNode .Hello h3, body #mountNode .Hello p {\n      text-align: center; }\n  body #mountNode .footer {\n    /* Set the fixed height of the footer here */\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n    background-color: #343f64 !important; }\n    body #mountNode .footer #made {\n      margin-top: -5px;\n      font-size: 0.6em;\n      text-align: center; }\n    body #mountNode .footer .row {\n      margin: 10px 0 0px 0px;\n      text-align: center;\n      color: #e0e0e0; }\n      body #mountNode .footer .row a {\n        color: #e0e0e0; }\n      body #mountNode .footer .row a:hover {\n        text-decoration: none;\n        color: #00bcd4; }\n    body #mountNode .footer .row:nth-child(2) {\n      margin: 0; }\n\nbody .Social {\n  text-align: center; }\n\nbody div.fb-follow.fb_iframe_widget {\n  position: relative;\n  left: 50%;\n  margin-left: -60px;\n  padding-top: 2px; }\n\nbody .bluePanel {\n  border-color: #1565c0; }\n  body .bluePanel .panel-heading {\n    text-align: left;\n    color: #e0e0e0;\n    border-color: #1565c0;\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%) !important;\n    background-image: -webkit-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -o-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -webkit-gradient(linear, left top, left bottom, from(#1565c0), to(#2979ff));\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%); }\n\nbody div.col-md-4.col-xs-6:nth-child(4) {\n  clear: both; }\n\nbody #PDF {\n  position: relative;\n  left: 50%;\n  margin-left: -25px; }\n  body #PDF img {\n    margin-bottom: 20px; }\n\nbody .ContactInRow {\n  margin-right: 10px; }\n\nbody .vertical-line {\n  border-top: 3px solid #ff6d00;\n  margin-top: 10px;\n  padding-top: 10px;\n  text-align: center; }\n\n.pad50 {\n  padding: 0 50px;\n  margin-bottom: 50px; }\n\n.btns-render {\n  display: flex;\n  justify-content: space-around;\n  margin-bottom: 25px; }\n  .btns-render span {\n    width: 49%;\n    border-radius: 3px;\n    text-align: center;\n    padding: 5px 0;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    transition: .25s;\n    background-color: #2979ff;\n    color: white;\n    border-radius: 4px;\n    cursor: pointer; }\n    .btns-render span:hover {\n      transform: scale(1.01); }\n\n.news-container {\n  display: flex;\n  /* justify-content: center; */\n  flex-wrap: wrap;\n  flex-direction: column;\n  align-items: center;\n  /* padding-left: 10px; */\n  width: 100%; }\n  .news-container .news {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    width: 950px;\n    justify-content: space-around;\n    /* box-shadow: 0px 6px 10px -1px; */\n    flex-direction: row;\n    margin-bottom: 35px;\n    align-items: center;\n    border-radius: 4px;\n    padding: 25px; }\n    .news-container .news:after {\n      content: \"\";\n      position: absolute;\n      width: 750px;\n      height: 2px;\n      background: #CACAC4;\n      bottom: -20px;\n      left: calc(50% - 375px); }\n    .news-container .news .logo {\n      height: 100%;\n      /* margin-bottom: 15px; */\n      margin-right: 15px;\n      width: 300px;\n      border: 5px solid #CACAC4;\n      border-radius: 6px; }\n      .news-container .news .logo img {\n        width: 100%;\n        height: 100%; }\n    .news-container .news .info {\n      /* min-width: 100%; */\n      /* padding-left: 5px; */\n      max-width: 45%;\n      text-align: justify; }\n      .news-container .news .info h2 {\n        margin: 0;\n        padding: 0;\n        font-size: 1.4em;\n        margin-top: 10px;\n        word-wrap: break-word; }\n      .news-container .news .info h3 {\n        margin-top: 5px;\n        font-size: 12px;\n        padding-left: 15px;\n        color: #a7821b; }\n      .news-container .news .info p:first-child {\n        font-size: 0.9em; }\n      .news-container .news .info p:last-child {\n        font-size: 1.2em;\n        font-weight: bold; }\n\n.Hello {\n  display: flex;\n  justify-content: center; }\n  .Hello .newsModule {\n    min-width: 200px;\n    max-width: 350px;\n    background: #343f64;\n    color: white !important; }\n    .Hello .newsModule .caption {\n      display: flex;\n      flex-direction: column;\n      height: 100%;\n      justify-content: space-between; }\n      .Hello .newsModule .caption .one-news-module {\n        color: white !important;\n        display: flex;\n        flex-direction: column;\n        position: relative; }\n        .Hello .newsModule .caption .one-news-module:first-child::after {\n          content: \"\";\n          position: absolute;\n          width: 80%;\n          height: 2px;\n          background: #cccccc;\n          bottom: -40px;\n          left: calc( 50% - 125px); }\n        .Hello .newsModule .caption .one-news-module h3 {\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module h4 {\n          font-size: .9em;\n          text-align: center;\n          color: #e9db8b;\n          margin-bottom: 15px;\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module p {\n          text-align: left;\n          margin-bottom: 25px; }\n\n.contact-main-containar {\n  padding: 0 15px; }\n", ""]);
+exports.push([module.i, "html {\n  min-height: 100%; }\n\nbody #mountNode {\n  padding: 0;\n  margin: 0; }\n  body #mountNode .navbar {\n    padding: 10px 25px;\n    background-color: #343f64;\n    background-image: none; }\n    body #mountNode .navbar .open {\n      background-color: #343f64;\n      background-image: none; }\n      body #mountNode .navbar .open #basic-nav-dropdown {\n        background-color: #343f64;\n        background-image: none; }\n      body #mountNode .navbar .open .dropdown-menu {\n        background-color: #343f64;\n        background-image: none; }\n        body #mountNode .navbar .open .dropdown-menu li a {\n          transition: .25s; }\n        body #mountNode .navbar .open .dropdown-menu li a:hover, body #mountNode .navbar .open .dropdown-menu li a:focus {\n          background-color: #3d4a75 !important;\n          background-image: none; }\n    body #mountNode .navbar .navbar-collapse ul li a {\n      color: white;\n      transition: .25s; }\n  body #mountNode .navbar-brand {\n    padding: 5px 10px; }\n    body #mountNode .navbar-brand img {\n      max-width: 100px;\n      max-height: 40px; }\n  body #mountNode .navbar-static-top {\n    border-bottom-left-radius: 3px;\n    border-bottom-right-radius: 3px; }\n  body #mountNode .sliderContainer {\n    margin-top: -20px; }\n    body #mountNode .sliderContainer .carousel-inner, body #mountNode .sliderContainer .item {\n      max-height: 600px; }\n      body #mountNode .sliderContainer .carousel-inner img, body #mountNode .sliderContainer .item img {\n        top: -60px;\n        width: 100%;\n        position: relative; }\n  body #mountNode .Hello {\n    margin-top: 20px; }\n    body #mountNode .Hello h3, body #mountNode .Hello p {\n      text-align: center; }\n  body #mountNode .footer {\n    /* Set the fixed height of the footer here */\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n    background-color: #343f64 !important; }\n    body #mountNode .footer #made {\n      margin-top: -5px;\n      font-size: 0.6em;\n      text-align: center; }\n    body #mountNode .footer .row {\n      margin: 10px 0 0px 0px;\n      text-align: center;\n      color: #e0e0e0; }\n      body #mountNode .footer .row a {\n        color: #e0e0e0; }\n      body #mountNode .footer .row a:hover {\n        text-decoration: none;\n        color: #00bcd4; }\n    body #mountNode .footer .row:nth-child(2) {\n      margin: 0; }\n\nbody .Social {\n  text-align: center; }\n\nbody div.fb-follow.fb_iframe_widget {\n  position: relative;\n  left: 50%;\n  margin-left: -60px;\n  padding-top: 2px; }\n\nbody .bluePanel {\n  border-color: #1565c0; }\n  body .bluePanel .panel-heading {\n    text-align: left;\n    color: #e0e0e0;\n    border-color: #1565c0;\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%) !important;\n    background-image: -webkit-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -o-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -webkit-gradient(linear, left top, left bottom, from(#1565c0), to(#2979ff));\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%); }\n\nbody div.col-md-4.col-xs-6:nth-child(4) {\n  clear: both; }\n\nbody #PDF {\n  position: relative;\n  left: 50%;\n  margin-left: -25px; }\n  body #PDF img {\n    margin-bottom: 20px; }\n\nbody .ContactInRow {\n  margin-right: 10px; }\n\nbody .vertical-line {\n  border-top: 3px solid #ff6d00;\n  margin-top: 10px;\n  padding-top: 10px;\n  text-align: center; }\n\n.pad50 {\n  padding: 0 50px;\n  margin-bottom: 50px; }\n\n.btns-render {\n  display: flex;\n  justify-content: space-around;\n  margin-bottom: 25px; }\n  .btns-render span {\n    width: 49%;\n    border-radius: 3px;\n    text-align: center;\n    padding: 5px 0;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    transition: .25s;\n    background-color: #2979ff;\n    color: white;\n    border-radius: 4px;\n    cursor: pointer; }\n    .btns-render span:hover {\n      transform: scale(1.01); }\n\n.news-container {\n  display: flex;\n  /* justify-content: center; */\n  flex-wrap: wrap;\n  flex-direction: column;\n  align-items: center;\n  /* padding-left: 10px; */\n  width: 100%; }\n  .news-container .news {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    width: 950px;\n    justify-content: space-around;\n    /* box-shadow: 0px 6px 10px -1px; */\n    flex-direction: row;\n    margin-bottom: 35px;\n    align-items: center;\n    border-radius: 4px;\n    padding: 25px; }\n    .news-container .news:after {\n      content: \"\";\n      position: absolute;\n      width: 750px;\n      height: 2px;\n      background: #CACAC4;\n      bottom: -20px;\n      left: calc(50% - 375px); }\n    .news-container .news .logo {\n      height: 100%;\n      /* margin-bottom: 15px; */\n      margin-right: 15px;\n      width: 300px;\n      border: 5px solid #CACAC4;\n      border-radius: 6px; }\n      .news-container .news .logo img {\n        width: 100%;\n        height: 100%; }\n    .news-container .news .info {\n      /* min-width: 100%; */\n      /* padding-left: 5px; */\n      max-width: 45%;\n      text-align: justify; }\n      .news-container .news .info h2 {\n        margin: 0;\n        padding: 0;\n        font-size: 1.4em;\n        margin-top: 10px;\n        word-wrap: break-word; }\n      .news-container .news .info h3 {\n        margin-top: 5px;\n        font-size: 12px;\n        padding-left: 15px;\n        color: #a7821b; }\n      .news-container .news .info p:first-child {\n        font-size: 0.9em; }\n      .news-container .news .info p:last-child {\n        font-size: 1.2em;\n        font-weight: bold; }\n\n.Hello {\n  display: flex;\n  justify-content: center; }\n  .Hello .newsModule {\n    min-width: 200px;\n    max-width: 350px;\n    background: #343f64;\n    color: white !important; }\n    .Hello .newsModule .caption {\n      display: flex;\n      flex-direction: column;\n      height: 100%;\n      justify-content: space-between;\n      min-height: 490px; }\n      .Hello .newsModule .caption .one-news-module {\n        color: white !important;\n        display: flex;\n        flex-direction: column;\n        position: relative; }\n        .Hello .newsModule .caption .one-news-module:first-child::after {\n          content: \"\";\n          position: absolute;\n          width: 80%;\n          height: 2px;\n          background: #cccccc;\n          bottom: -40px;\n          left: calc( 50% - 125px); }\n        .Hello .newsModule .caption .one-news-module h3 {\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module h4 {\n          font-size: .9em;\n          text-align: center;\n          color: #e9db8b;\n          margin-bottom: 15px;\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module p {\n          text-align: left;\n          margin-bottom: 25px; }\n\n.contact-main-containar {\n  padding: 0 15px; }\n", ""]);
 
 // exports
 
@@ -47958,25 +47965,7 @@ module.exports = function(module) {
 /* 532 */,
 /* 533 */,
 /* 534 */,
-/* 535 */,
-/* 536 */,
-/* 537 */,
-/* 538 */,
-/* 539 */,
-/* 540 */,
-/* 541 */,
-/* 542 */,
-/* 543 */,
-/* 544 */,
-/* 545 */,
-/* 546 */,
-/* 547 */,
-/* 548 */,
-/* 549 */,
-/* 550 */,
-/* 551 */,
-/* 552 */,
-/* 553 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48010,6 +47999,55 @@ var lessonsData = exports.lessonsData = [{
     date: '27.03.17',
     time: '9:30-10:50',
     aud: '318'
+}, {
+    name: 'Міронова  Вікторія Леонідівна',
+    img: _Globals.MIRONOVA,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
+}, {
+    name: 'Сокульський Олег Євгенович',
+    img: _Globals.SOKULSKY,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
+}, {
+    name: 'Домрачев Володимир Миколайович',
+    img: _Globals.DOMRACHEV,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
+}, {
+    name: 'Пирог Микола Володимирович',
+    img: _Globals.PIROG,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
+}, {
+    name: 'Феник Євгеній Олександрович',
+    img: _Globals.FENIK,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
+}, {
+    name: 'Сайко Володимир Григорович',
+    img: _Globals.SAIKO,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
+}, {
+    name: 'Гарко Ірина Ігорівна',
+    img: _Globals.FIT,
+    theme: 'Метод дотичних (Метод Ньютона). Метод ітерацій',
+    date: '27.03.17',
+    time: '9:30-10:50',
+    aud: '318'
 }];
 
 var consultData = exports.consultData = [{
@@ -48024,6 +48062,34 @@ var consultData = exports.consultData = [{
     name: 'Духновська Ксенія Костянтинівна',
     img: _Globals.DUHNOVSKA,
     time: '14:10-15:30'
+}, {
+    name: 'Міронова  Вікторія Леонідівна',
+    img: _Globals.MIRONOVA,
+    time: 'Вівторок: 11:00-12:20'
+}, {
+    name: 'Сокульський Олег Євгенович',
+    img: _Globals.SOKULSKY,
+    time: 'Вівторок: 11:00-12:20'
+}, {
+    name: 'Домрачев Володимир Миколайович',
+    img: _Globals.DOMRACHEV,
+    time: 'Вівторок: 11:00-12:20'
+}, {
+    name: 'Пирог Микола Володимирович',
+    img: _Globals.PIROG,
+    time: 'Вівторок: 11:00-12:20'
+}, {
+    name: 'Феник Євгеній Олександрович',
+    img: _Globals.FENIK,
+    time: 'Вівторок: 11:00-12:20'
+}, {
+    name: 'Сайко Володимир Григорович',
+    img: _Globals.SAIKO,
+    time: 'Вівторок: 11:00-12:20'
+}, {
+    name: 'Гарко Ірина Ігорівна',
+    img: _Globals.FIT,
+    time: 'Вівторок: 11:00-12:20'
 }];
 
 var NEWS = exports.NEWS = [{
@@ -48038,6 +48104,13 @@ var NEWS = exports.NEWS = [{
     text: "В середині травня буде проходити глобальний форум кібербезпеки в дата центрі Парковий, в якому прийматиме участь і наша кафедра ПІС.",
     end: "Запрошуємо всіх бажаючих прийняти участь!",
     img: "news1.jpg"
+}, {
+    title: "Міжнародна науково-практична конференція",
+    date: "29-30 вересня 2017 року",
+    text: "На базі факультету інформаційних технологій Київського національного університету імені Тараса Шевченка відбудеться Міжнародна науково-практична конференція «Розбудова економічної освіти та формування основ фінансової грамотності учнівської молоді – основа розвитку громадянського суспільства та становлення економіки знань» До участі в конференції запрошуються педагоги, науковці, викладачі ВНЗ, методисти, фахівці у галузі інформаційних технологій і прикладних дисциплін, фахівці навчальних центрів і бізнес-структур, менеджери та керівники навчальних закладів, аспіранти та докторанти",
+    end: "детальна інформація:",
+    file: "https://drive.google.com/file/d/0BwuOv3Xw53PoZGQteGJvV0pJY3c/view?usp=sharing",
+    img: "news3.png"
 }];
 
 var EVENTS = exports.EVENTS = [{
@@ -48053,6 +48126,24 @@ var EVENTS = exports.EVENTS = [{
 }];
 
 /***/ }),
+/* 536 */,
+/* 537 */,
+/* 538 */,
+/* 539 */,
+/* 540 */,
+/* 541 */,
+/* 542 */,
+/* 543 */,
+/* 544 */,
+/* 545 */,
+/* 546 */,
+/* 547 */,
+/* 548 */,
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */,
+/* 553 */,
 /* 554 */,
 /* 555 */,
 /* 556 */,
@@ -48199,7 +48290,7 @@ var _reactBootstrap = __webpack_require__(92);
 
 var _Globals = __webpack_require__(138);
 
-var _Data = __webpack_require__(553);
+var _Data = __webpack_require__(535);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48219,9 +48310,15 @@ var Hello = function (_Component) {
     }
 
     _createClass(Hello, [{
+        key: 'sorted',
+        value: function sorted(a, b) {
+            return a > b ? 1 : -1;
+        }
+    }, {
         key: 'render',
         value: function render() {
-            var newsContainer = _Data.NEWS.map(function (item, index) {
+            var sortedNews = _Data.NEWS.sort(this.sorted);
+            var newsContainer = sortedNews.map(function (item, index) {
                 if (index > 1) return;
                 var newText = "";
                 if (item.text.length > 75) {

@@ -33,3 +33,10 @@ export const KOVTUN = './src/teachers/kovtun.jpg';
 export const LAHNO = './src/teachers/lahno.jpg';
 export const PECHENENKO = './src/teachers/pechenenko.jpg';
 export const SENCHENKO = './src/teachers/senchenko.jpg';
+
+export const SAIKO = './src/teachers/saiko.jpg';
+export const SOKULSKY = './src/teachers/sokulsky.jpg';
+export const DOMRACHEV = './src/teachers/domrachev.jpg';
+export const PIROG = './src/teachers/pirog.jpg';
+export const MIRONOVA = './src/teachers/mironova.jpg';
+export const FENIK = './src/teachers/fenik.jpg';

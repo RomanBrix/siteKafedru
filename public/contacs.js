@@ -11159,6 +11159,13 @@ var LAHNO = exports.LAHNO = './src/teachers/lahno.jpg';
 var PECHENENKO = exports.PECHENENKO = './src/teachers/pechenenko.jpg';
 var SENCHENKO = exports.SENCHENKO = './src/teachers/senchenko.jpg';
 
+var SAIKO = exports.SAIKO = './src/teachers/saiko.jpg';
+var SOKULSKY = exports.SOKULSKY = './src/teachers/sokulsky.jpg';
+var DOMRACHEV = exports.DOMRACHEV = './src/teachers/domrachev.jpg';
+var PIROG = exports.PIROG = './src/teachers/pirog.jpg';
+var MIRONOVA = exports.MIRONOVA = './src/teachers/mironova.jpg';
+var FENIK = exports.FENIK = './src/teachers/fenik.jpg';
+
 /***/ }),
 /* 139 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -21519,7 +21526,7 @@ exports.i(__webpack_require__(292), "");
 exports.i(__webpack_require__(291), "");
 
 // module
-exports.push([module.i, "html {\n  min-height: 100%; }\n\nbody #mountNode {\n  padding: 0;\n  margin: 0; }\n  body #mountNode .navbar {\n    padding: 10px 25px;\n    background-color: #343f64;\n    background-image: none; }\n    body #mountNode .navbar .open {\n      background-color: #343f64;\n      background-image: none; }\n      body #mountNode .navbar .open #basic-nav-dropdown {\n        background-color: #343f64;\n        background-image: none; }\n      body #mountNode .navbar .open .dropdown-menu {\n        background-color: #343f64;\n        background-image: none; }\n        body #mountNode .navbar .open .dropdown-menu li a {\n          transition: .25s; }\n        body #mountNode .navbar .open .dropdown-menu li a:hover, body #mountNode .navbar .open .dropdown-menu li a:focus {\n          background-color: #3d4a75 !important;\n          background-image: none; }\n    body #mountNode .navbar .navbar-collapse ul li a {\n      color: white;\n      transition: .25s; }\n  body #mountNode .navbar-brand {\n    padding: 5px 10px; }\n    body #mountNode .navbar-brand img {\n      max-width: 100px;\n      max-height: 40px; }\n  body #mountNode .navbar-static-top {\n    border-bottom-left-radius: 3px;\n    border-bottom-right-radius: 3px; }\n  body #mountNode .sliderContainer {\n    margin-top: -20px; }\n    body #mountNode .sliderContainer .carousel-inner, body #mountNode .sliderContainer .item {\n      max-height: 600px; }\n      body #mountNode .sliderContainer .carousel-inner img, body #mountNode .sliderContainer .item img {\n        top: -60px;\n        width: 100%;\n        position: relative; }\n  body #mountNode .Hello {\n    margin-top: 20px; }\n    body #mountNode .Hello h3, body #mountNode .Hello p {\n      text-align: center; }\n  body #mountNode .footer {\n    /* Set the fixed height of the footer here */\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n    background-color: #343f64 !important; }\n    body #mountNode .footer #made {\n      margin-top: -5px;\n      font-size: 0.6em;\n      text-align: center; }\n    body #mountNode .footer .row {\n      margin: 10px 0 0px 0px;\n      text-align: center;\n      color: #e0e0e0; }\n      body #mountNode .footer .row a {\n        color: #e0e0e0; }\n      body #mountNode .footer .row a:hover {\n        text-decoration: none;\n        color: #00bcd4; }\n    body #mountNode .footer .row:nth-child(2) {\n      margin: 0; }\n\nbody .Social {\n  text-align: center; }\n\nbody div.fb-follow.fb_iframe_widget {\n  position: relative;\n  left: 50%;\n  margin-left: -60px;\n  padding-top: 2px; }\n\nbody .bluePanel {\n  border-color: #1565c0; }\n  body .bluePanel .panel-heading {\n    text-align: left;\n    color: #e0e0e0;\n    border-color: #1565c0;\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%) !important;\n    background-image: -webkit-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -o-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -webkit-gradient(linear, left top, left bottom, from(#1565c0), to(#2979ff));\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%); }\n\nbody div.col-md-4.col-xs-6:nth-child(4) {\n  clear: both; }\n\nbody #PDF {\n  position: relative;\n  left: 50%;\n  margin-left: -25px; }\n  body #PDF img {\n    margin-bottom: 20px; }\n\nbody .ContactInRow {\n  margin-right: 10px; }\n\nbody .vertical-line {\n  border-top: 3px solid #ff6d00;\n  margin-top: 10px;\n  padding-top: 10px;\n  text-align: center; }\n\n.pad50 {\n  padding: 0 50px;\n  margin-bottom: 50px; }\n\n.btns-render {\n  display: flex;\n  justify-content: space-around;\n  margin-bottom: 25px; }\n  .btns-render span {\n    width: 49%;\n    border-radius: 3px;\n    text-align: center;\n    padding: 5px 0;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    transition: .25s;\n    background-color: #2979ff;\n    color: white;\n    border-radius: 4px;\n    cursor: pointer; }\n    .btns-render span:hover {\n      transform: scale(1.01); }\n\n.news-container {\n  display: flex;\n  /* justify-content: center; */\n  flex-wrap: wrap;\n  flex-direction: column;\n  align-items: center;\n  /* padding-left: 10px; */\n  width: 100%; }\n  .news-container .news {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    width: 950px;\n    justify-content: space-around;\n    /* box-shadow: 0px 6px 10px -1px; */\n    flex-direction: row;\n    margin-bottom: 35px;\n    align-items: center;\n    border-radius: 4px;\n    padding: 25px; }\n    .news-container .news:after {\n      content: \"\";\n      position: absolute;\n      width: 750px;\n      height: 2px;\n      background: #CACAC4;\n      bottom: -20px;\n      left: calc(50% - 375px); }\n    .news-container .news .logo {\n      height: 100%;\n      /* margin-bottom: 15px; */\n      margin-right: 15px;\n      width: 300px;\n      border: 5px solid #CACAC4;\n      border-radius: 6px; }\n      .news-container .news .logo img {\n        width: 100%;\n        height: 100%; }\n    .news-container .news .info {\n      /* min-width: 100%; */\n      /* padding-left: 5px; */\n      max-width: 45%;\n      text-align: justify; }\n      .news-container .news .info h2 {\n        margin: 0;\n        padding: 0;\n        font-size: 1.4em;\n        margin-top: 10px;\n        word-wrap: break-word; }\n      .news-container .news .info h3 {\n        margin-top: 5px;\n        font-size: 12px;\n        padding-left: 15px;\n        color: #a7821b; }\n      .news-container .news .info p:first-child {\n        font-size: 0.9em; }\n      .news-container .news .info p:last-child {\n        font-size: 1.2em;\n        font-weight: bold; }\n\n.Hello {\n  display: flex;\n  justify-content: center; }\n  .Hello .newsModule {\n    min-width: 200px;\n    max-width: 350px;\n    background: #343f64;\n    color: white !important; }\n    .Hello .newsModule .caption {\n      display: flex;\n      flex-direction: column;\n      height: 100%;\n      justify-content: space-between; }\n      .Hello .newsModule .caption .one-news-module {\n        color: white !important;\n        display: flex;\n        flex-direction: column;\n        position: relative; }\n        .Hello .newsModule .caption .one-news-module:first-child::after {\n          content: \"\";\n          position: absolute;\n          width: 80%;\n          height: 2px;\n          background: #cccccc;\n          bottom: -40px;\n          left: calc( 50% - 125px); }\n        .Hello .newsModule .caption .one-news-module h3 {\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module h4 {\n          font-size: .9em;\n          text-align: center;\n          color: #e9db8b;\n          margin-bottom: 15px;\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module p {\n          text-align: left;\n          margin-bottom: 25px; }\n\n.contact-main-containar {\n  padding: 0 15px; }\n", ""]);
+exports.push([module.i, "html {\n  min-height: 100%; }\n\nbody #mountNode {\n  padding: 0;\n  margin: 0; }\n  body #mountNode .navbar {\n    padding: 10px 25px;\n    background-color: #343f64;\n    background-image: none; }\n    body #mountNode .navbar .open {\n      background-color: #343f64;\n      background-image: none; }\n      body #mountNode .navbar .open #basic-nav-dropdown {\n        background-color: #343f64;\n        background-image: none; }\n      body #mountNode .navbar .open .dropdown-menu {\n        background-color: #343f64;\n        background-image: none; }\n        body #mountNode .navbar .open .dropdown-menu li a {\n          transition: .25s; }\n        body #mountNode .navbar .open .dropdown-menu li a:hover, body #mountNode .navbar .open .dropdown-menu li a:focus {\n          background-color: #3d4a75 !important;\n          background-image: none; }\n    body #mountNode .navbar .navbar-collapse ul li a {\n      color: white;\n      transition: .25s; }\n  body #mountNode .navbar-brand {\n    padding: 5px 10px; }\n    body #mountNode .navbar-brand img {\n      max-width: 100px;\n      max-height: 40px; }\n  body #mountNode .navbar-static-top {\n    border-bottom-left-radius: 3px;\n    border-bottom-right-radius: 3px; }\n  body #mountNode .sliderContainer {\n    margin-top: -20px; }\n    body #mountNode .sliderContainer .carousel-inner, body #mountNode .sliderContainer .item {\n      max-height: 600px; }\n      body #mountNode .sliderContainer .carousel-inner img, body #mountNode .sliderContainer .item img {\n        top: -60px;\n        width: 100%;\n        position: relative; }\n  body #mountNode .Hello {\n    margin-top: 20px; }\n    body #mountNode .Hello h3, body #mountNode .Hello p {\n      text-align: center; }\n  body #mountNode .footer {\n    /* Set the fixed height of the footer here */\n    border-top-left-radius: 3px;\n    border-top-right-radius: 3px;\n    background-color: #343f64 !important; }\n    body #mountNode .footer #made {\n      margin-top: -5px;\n      font-size: 0.6em;\n      text-align: center; }\n    body #mountNode .footer .row {\n      margin: 10px 0 0px 0px;\n      text-align: center;\n      color: #e0e0e0; }\n      body #mountNode .footer .row a {\n        color: #e0e0e0; }\n      body #mountNode .footer .row a:hover {\n        text-decoration: none;\n        color: #00bcd4; }\n    body #mountNode .footer .row:nth-child(2) {\n      margin: 0; }\n\nbody .Social {\n  text-align: center; }\n\nbody div.fb-follow.fb_iframe_widget {\n  position: relative;\n  left: 50%;\n  margin-left: -60px;\n  padding-top: 2px; }\n\nbody .bluePanel {\n  border-color: #1565c0; }\n  body .bluePanel .panel-heading {\n    text-align: left;\n    color: #e0e0e0;\n    border-color: #1565c0;\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%) !important;\n    background-image: -webkit-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -o-linear-gradient(top, #1565c0 0, #2979ff 100%);\n    background-image: -webkit-gradient(linear, left top, left bottom, from(#1565c0), to(#2979ff));\n    background-image: linear-gradient(to bottom, #1565c0 0, #2979ff 100%); }\n\nbody div.col-md-4.col-xs-6:nth-child(4) {\n  clear: both; }\n\nbody #PDF {\n  position: relative;\n  left: 50%;\n  margin-left: -25px; }\n  body #PDF img {\n    margin-bottom: 20px; }\n\nbody .ContactInRow {\n  margin-right: 10px; }\n\nbody .vertical-line {\n  border-top: 3px solid #ff6d00;\n  margin-top: 10px;\n  padding-top: 10px;\n  text-align: center; }\n\n.pad50 {\n  padding: 0 50px;\n  margin-bottom: 50px; }\n\n.btns-render {\n  display: flex;\n  justify-content: space-around;\n  margin-bottom: 25px; }\n  .btns-render span {\n    width: 49%;\n    border-radius: 3px;\n    text-align: center;\n    padding: 5px 0;\n    text-transform: uppercase;\n    letter-spacing: 3px;\n    transition: .25s;\n    background-color: #2979ff;\n    color: white;\n    border-radius: 4px;\n    cursor: pointer; }\n    .btns-render span:hover {\n      transform: scale(1.01); }\n\n.news-container {\n  display: flex;\n  /* justify-content: center; */\n  flex-wrap: wrap;\n  flex-direction: column;\n  align-items: center;\n  /* padding-left: 10px; */\n  width: 100%; }\n  .news-container .news {\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    width: 950px;\n    justify-content: space-around;\n    /* box-shadow: 0px 6px 10px -1px; */\n    flex-direction: row;\n    margin-bottom: 35px;\n    align-items: center;\n    border-radius: 4px;\n    padding: 25px; }\n    .news-container .news:after {\n      content: \"\";\n      position: absolute;\n      width: 750px;\n      height: 2px;\n      background: #CACAC4;\n      bottom: -20px;\n      left: calc(50% - 375px); }\n    .news-container .news .logo {\n      height: 100%;\n      /* margin-bottom: 15px; */\n      margin-right: 15px;\n      width: 300px;\n      border: 5px solid #CACAC4;\n      border-radius: 6px; }\n      .news-container .news .logo img {\n        width: 100%;\n        height: 100%; }\n    .news-container .news .info {\n      /* min-width: 100%; */\n      /* padding-left: 5px; */\n      max-width: 45%;\n      text-align: justify; }\n      .news-container .news .info h2 {\n        margin: 0;\n        padding: 0;\n        font-size: 1.4em;\n        margin-top: 10px;\n        word-wrap: break-word; }\n      .news-container .news .info h3 {\n        margin-top: 5px;\n        font-size: 12px;\n        padding-left: 15px;\n        color: #a7821b; }\n      .news-container .news .info p:first-child {\n        font-size: 0.9em; }\n      .news-container .news .info p:last-child {\n        font-size: 1.2em;\n        font-weight: bold; }\n\n.Hello {\n  display: flex;\n  justify-content: center; }\n  .Hello .newsModule {\n    min-width: 200px;\n    max-width: 350px;\n    background: #343f64;\n    color: white !important; }\n    .Hello .newsModule .caption {\n      display: flex;\n      flex-direction: column;\n      height: 100%;\n      justify-content: space-between;\n      min-height: 490px; }\n      .Hello .newsModule .caption .one-news-module {\n        color: white !important;\n        display: flex;\n        flex-direction: column;\n        position: relative; }\n        .Hello .newsModule .caption .one-news-module:first-child::after {\n          content: \"\";\n          position: absolute;\n          width: 80%;\n          height: 2px;\n          background: #cccccc;\n          bottom: -40px;\n          left: calc( 50% - 125px); }\n        .Hello .newsModule .caption .one-news-module h3 {\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module h4 {\n          font-size: .9em;\n          text-align: center;\n          color: #e9db8b;\n          margin-bottom: 15px;\n          margin-top: 0; }\n        .Hello .newsModule .caption .one-news-module p {\n          text-align: left;\n          margin-bottom: 25px; }\n\n.contact-main-containar {\n  padding: 0 15px; }\n", ""]);
 
 // exports
 
@@ -47984,7 +47991,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _ReactFragment = __webpack_require__(539);
+var _ReactFragment = __webpack_require__(540);
 
 var _ReactFragment2 = _interopRequireDefault(_ReactFragment);
 
@@ -48036,7 +48043,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _chainFunction = __webpack_require__(536);
+var _chainFunction = __webpack_require__(537);
 
 var _chainFunction2 = _interopRequireDefault(_chainFunction);
 
@@ -48052,7 +48059,7 @@ var _warning = __webpack_require__(20);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _ChildMapping = __webpack_require__(552);
+var _ChildMapping = __webpack_require__(553);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -48357,7 +48364,7 @@ var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _childUtils = __webpack_require__(530);
 
-var _events = __webpack_require__(546);
+var _events = __webpack_require__(547);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -48365,11 +48372,11 @@ var _keycode = __webpack_require__(93);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
-var _FocusRipple = __webpack_require__(541);
+var _FocusRipple = __webpack_require__(542);
 
 var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 
-var _TouchRipple = __webpack_require__(544);
+var _TouchRipple = __webpack_require__(545);
 
 var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
@@ -48770,7 +48777,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _Paper = __webpack_require__(538);
+var _Paper = __webpack_require__(539);
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -48779,7 +48786,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Paper2.default;
 
 /***/ }),
-/* 535 */
+/* 535 */,
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48798,7 +48806,7 @@ exports.default = function (arr) {
 };
 
 /***/ }),
-/* 536 */
+/* 537 */
 /***/ (function(module, exports) {
 
 
@@ -48824,7 +48832,7 @@ module.exports = function chain(){
 
 
 /***/ }),
-/* 537 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48864,7 +48872,7 @@ var keyOf = function keyOf(oneKeyObj) {
 module.exports = keyOf;
 
 /***/ }),
-/* 538 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49022,7 +49030,7 @@ exports.default = Paper;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 539 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49139,7 +49147,7 @@ exports.default = ReactFragment.create;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 540 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49318,7 +49326,7 @@ exports.default = CircleRipple;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 541 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49376,7 +49384,7 @@ var _transitions = __webpack_require__(61);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _ScaleIn = __webpack_require__(542);
+var _ScaleIn = __webpack_require__(543);
 
 var _ScaleIn2 = _interopRequireDefault(_ScaleIn);
 
@@ -49524,7 +49532,7 @@ exports.default = FocusRipple;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 542 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49578,7 +49586,7 @@ var _TransitionGroup = __webpack_require__(531);
 
 var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-var _ScaleInChild = __webpack_require__(543);
+var _ScaleInChild = __webpack_require__(544);
 
 var _ScaleInChild2 = _interopRequireDefault(_ScaleInChild);
 
@@ -49660,7 +49668,7 @@ exports.default = ScaleIn;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 543 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49837,7 +49845,7 @@ exports.default = ScaleInChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 544 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49871,7 +49879,7 @@ var _inherits2 = __webpack_require__(3);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _toArray2 = __webpack_require__(535);
+var _toArray2 = __webpack_require__(536);
 
 var _toArray3 = _interopRequireDefault(_toArray2);
 
@@ -49895,11 +49903,11 @@ var _TransitionGroup = __webpack_require__(531);
 
 var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-var _dom = __webpack_require__(545);
+var _dom = __webpack_require__(546);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _CircleRipple = __webpack_require__(540);
+var _CircleRipple = __webpack_require__(541);
 
 var _CircleRipple2 = _interopRequireDefault(_CircleRipple);
 
@@ -50154,7 +50162,7 @@ exports.default = TouchRipple;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 545 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50184,7 +50192,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 546 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50229,7 +50237,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 547 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50326,7 +50334,7 @@ var EventConstants = {
 module.exports = EventConstants;
 
 /***/ }),
-/* 548 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50351,14 +50359,14 @@ module.exports = EventConstants;
 
 
 
-var EventConstants = __webpack_require__(547);
+var EventConstants = __webpack_require__(548);
 var EventPluginUtils = __webpack_require__(94);
 var EventPropagators = __webpack_require__(59);
 var SyntheticUIEvent = __webpack_require__(60);
-var TouchEventUtils = __webpack_require__(549);
+var TouchEventUtils = __webpack_require__(550);
 var ViewportMetrics = __webpack_require__(141);
 
-var keyOf = __webpack_require__(537);
+var keyOf = __webpack_require__(538);
 var topLevelTypes = EventConstants.topLevelTypes;
 
 var isStartish = EventPluginUtils.isStartish;
@@ -50504,7 +50512,7 @@ module.exports = createTapEventPlugin;
 
 
 /***/ }),
-/* 549 */
+/* 550 */
 /***/ (function(module, exports) {
 
 /**
@@ -50552,7 +50560,7 @@ module.exports = TouchEventUtils;
 
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports) {
 
 module.exports = function(lastTouchEvent, clickTimestamp) {
@@ -50563,11 +50571,11 @@ module.exports = function(lastTouchEvent, clickTimestamp) {
 
 
 /***/ }),
-/* 551 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(10);
-var defaultClickRejectionStrategy = __webpack_require__(550);
+var defaultClickRejectionStrategy = __webpack_require__(551);
 
 var alreadyInjected = false;
 
@@ -50589,14 +50597,14 @@ should be injected by the application.'
   alreadyInjected = true;
 
   __webpack_require__(58).injection.injectEventPluginsByName({
-    'TapEventPlugin':       __webpack_require__(548)(shouldRejectClick)
+    'TapEventPlugin':       __webpack_require__(549)(shouldRejectClick)
   });
 };
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 552 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50693,7 +50701,6 @@ function mergeChildMappings(prev, next) {
 }
 
 /***/ }),
-/* 553 */,
 /* 554 */,
 /* 555 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -52822,7 +52829,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactTapEventPlugin = __webpack_require__(551);
+var _reactTapEventPlugin = __webpack_require__(552);
 
 var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
 
