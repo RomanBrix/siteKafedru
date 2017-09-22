@@ -11165,6 +11165,7 @@ var DOMRACHEV = exports.DOMRACHEV = './src/teachers/domrachev.jpg';
 var PIROG = exports.PIROG = './src/teachers/pirog.jpg';
 var MIRONOVA = exports.MIRONOVA = './src/teachers/mironova.jpg';
 var FENIK = exports.FENIK = './src/teachers/fenik.jpg';
+var GARKO = exports.GARKO = './src/teachers/garko.jpg';
 
 /***/ }),
 /* 139 */

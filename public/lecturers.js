@@ -11165,6 +11165,7 @@ var DOMRACHEV = exports.DOMRACHEV = './src/teachers/domrachev.jpg';
 var PIROG = exports.PIROG = './src/teachers/pirog.jpg';
 var MIRONOVA = exports.MIRONOVA = './src/teachers/mironova.jpg';
 var FENIK = exports.FENIK = './src/teachers/fenik.jpg';
+var GARKO = exports.GARKO = './src/teachers/garko.jpg';
 
 /***/ }),
 /* 139 */
@@ -48271,17 +48272,17 @@ var Personal = function (_Component) {
                         { xs: 6, md: 4 },
                         _react2.default.createElement(
                             _reactBootstrap.Thumbnail,
-                            { src: './src/teachers/jihareva.jpg', alt: '242x200' },
+                            { src: './src/teachers/garko.jpg', alt: '242x200' },
                             _react2.default.createElement(
                                 'h3',
                                 null,
-                                '\u0416\u0438\u0445\u0430\u0440\u0454\u0432\u0430 \u042E\u043B\u0456\u044F \u0406\u0433\u043E\u0440\u0456\u0432\u043D\u0430'
+                                '\u0413\u0430\u0440\u043A\u043E \u0406\u0440\u0438\u043D\u0430 \u0406\u0433\u043E\u0440\u0456\u0432\u043D\u0430'
                             ),
                             _react2.default.createElement('hr', null),
                             _react2.default.createElement(
                                 'p',
                                 { style: styles.p },
-                                '\u041A\u0430\u043D\u0434\u0438\u0434\u0430\u0442 \u0444\u0456\u0437\u0438\u043A\u043E-\u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u043D\u0438\u0445 \u043D\u0430\u0443\u043A,  \u0430\u0441\u0438\u0441\u0442\u0435\u043D\u0442'
+                                '\u0430\u0441\u0438\u0441\u0442\u0435\u043D\u0442'
                             )
                         )
                     ),
@@ -48301,6 +48302,25 @@ var Personal = function (_Component) {
                                 'p',
                                 { style: styles.p },
                                 '\u0434\u043E\u0446\u0435\u043D\u0442, \u043A. \u0442. \u043D.'
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        _reactBootstrap.Col,
+                        { xs: 6, md: 4 },
+                        _react2.default.createElement(
+                            _reactBootstrap.Thumbnail,
+                            { src: './src/teachers/jihareva.jpg', alt: '242x200' },
+                            _react2.default.createElement(
+                                'h3',
+                                null,
+                                '\u0416\u0438\u0445\u0430\u0440\u0454\u0432\u0430 \u042E\u043B\u0456\u044F \u0406\u0433\u043E\u0440\u0456\u0432\u043D\u0430'
+                            ),
+                            _react2.default.createElement('hr', null),
+                            _react2.default.createElement(
+                                'p',
+                                { style: styles.p },
+                                '\u041A\u0430\u043D\u0434\u0438\u0434\u0430\u0442 \u0444\u0456\u0437\u0438\u043A\u043E-\u043C\u0430\u0442\u0435\u043C\u0430\u0442\u0438\u0447\u043D\u0438\u0445 \u043D\u0430\u0443\u043A,  \u0430\u0441\u0438\u0441\u0442\u0435\u043D\u0442'
                             )
                         )
                     ),
@@ -48409,25 +48429,6 @@ var Personal = function (_Component) {
                                 'h3',
                                 null,
                                 '\u0424\u0435\u043D\u0438\u043A \u0404\u0432\u0433\u0435\u043D\u0456\u0439 \u041E\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0438\u0447'
-                            ),
-                            _react2.default.createElement('hr', null),
-                            _react2.default.createElement(
-                                'p',
-                                { style: styles.p },
-                                '\u0430\u0441\u0438\u0441\u0442\u0435\u043D\u0442'
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        _reactBootstrap.Col,
-                        { xs: 6, md: 4 },
-                        _react2.default.createElement(
-                            _reactBootstrap.Thumbnail,
-                            { src: './src/teachers/fit.png', alt: '242x200' },
-                            _react2.default.createElement(
-                                'h3',
-                                null,
-                                '\u0413\u0430\u0440\u043A\u043E \u0406\u0440\u0438\u043D\u0430 \u0406\u0433\u043E\u0440\u0456\u0432\u043D\u0430'
                             ),
                             _react2.default.createElement('hr', null),
                             _react2.default.createElement(

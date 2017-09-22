@@ -12,6 +12,7 @@ import {
     MIRONOVA,
     FENIK,
     SAIKO,
+    GARKO,
     FIT
 } from '../Globals';
 export const lessonsData = [
@@ -22,6 +23,22 @@ export const lessonsData = [
         date: '9.10.17',
         time: '10:30',
         aud:'211'
+    },
+    {
+        name: 'Гарко Ірина Ігорівна',
+        img: GARKO,
+        theme:'Числові характеристики випадкових величин',
+        date: '10.10.17',
+        time: '15:10',
+        aud:'204'
+    },
+    {
+        name: 'Міронова  Вікторія Леонідівна',
+        img: MIRONOVA,
+        theme:'Javascript test Frameworks, як інструментарів модульного тестування',
+        date: '27.10.17',
+        time: '9:00',
+        aud:'203'
     },
     {
         name: 'Духновська Ксенія Костянтинівна',
@@ -38,14 +55,6 @@ export const lessonsData = [
         date: '2.10.17',
         time: '9:00',
         aud:'217'
-    },
-    {
-        name: 'Міронова  Вікторія Леонідівна',
-        img: MIRONOVA,
-        theme:'Javascript test Frameworks, як інструментарів модульного тестування',
-        date: '27.10.17',
-        time: '9:00',
-        aud:'203'
     },
     {
         name: 'Сокульський Олег Євгенович',
@@ -87,14 +96,7 @@ export const lessonsData = [
         time: '13:40',
         aud:'217'
     },
-    {
-        name: 'Гарко Ірина Ігорівна',
-        img: FIT,
-        theme:'Числові характеристики випадкових величин',
-        date: '10.10.17',
-        time: '15:10',
-        aud:'204'
-    }
+    
 ];
 
 export const consultData = [
@@ -102,6 +104,16 @@ export const consultData = [
         name: 'Плескач Валентина Леонідівна',
         img: PLESKACH,
         time: 'Понеділок 11:00 - 12:00'
+    },
+    {
+        name: 'Гарко Ірина Ігорівна',
+        img: GARKO,
+        time: 'Вівторок 16:30 – 17:30'       
+    },
+    {
+        name: 'Міронова  Вікторія Леонідівна',
+        img: MIRONOVA,
+        time: 'П’ятниця 10:30 – 11:30'
     },
     {
         name: 'Жихарєва Юлія Ігорівна',
@@ -112,11 +124,6 @@ export const consultData = [
         name: 'Духновська Ксенія Костянтинівна',
         img: DUHNOVSKA,
         time: 'Вівторок 12:10 - 13:20',
-    },
-    {
-        name: 'Міронова  Вікторія Леонідівна',
-        img: MIRONOVA,
-        time: 'П’ятниця 10:30 – 11:30'
     },
     {
         name: 'Сокульський Олег Євгенович',
@@ -143,11 +150,7 @@ export const consultData = [
         img: SAIKO,
         time: 'Вівторок 11:00 – 12:00'
     },
-    {
-        name: 'Гарко Ірина Ігорівна',
-        img: FIT,
-        time: 'Вівторок 16:30 – 17:30'       
-    }
+    
 
 ];
 

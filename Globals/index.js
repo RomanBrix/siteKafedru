@@ -40,3 +40,4 @@ export const DOMRACHEV = './src/teachers/domrachev.jpg';
 export const PIROG = './src/teachers/pirog.jpg';
 export const MIRONOVA = './src/teachers/mironova.jpg';
 export const FENIK = './src/teachers/fenik.jpg';
+export const GARKO = './src/teachers/garko.jpg';

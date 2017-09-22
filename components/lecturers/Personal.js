@@ -23,10 +23,10 @@ export default class Personal extends Component {
                         </Thumbnail>
                     </Col>
                     <Col xs={6} md={4}>
-                        <Thumbnail src="./src/teachers/jihareva.jpg" alt="242x200">
-                            <h3>Жихарєва Юлія Ігорівна</h3>
+                        <Thumbnail src="./src/teachers/garko.jpg" alt="242x200">
+                            <h3>Гарко Ірина Ігорівна</h3>
                             <hr/>
-                            <p style={styles.p}>Кандидат фізико-математичних наук,  асистент</p>
+                            <p style={styles.p}>асистент</p>
                         </Thumbnail>
                     </Col>
                     <Col xs={6} md={4}>
@@ -34,6 +34,13 @@ export default class Personal extends Component {
                             <h3>Міронова Вікторія Леонідівна </h3>
                             <hr/>
                             <p style={styles.p}>доцент, к. т. н.</p>
+                        </Thumbnail>
+                    </Col>
+                    <Col xs={6} md={4}>
+                        <Thumbnail src="./src/teachers/jihareva.jpg" alt="242x200">
+                            <h3>Жихарєва Юлія Ігорівна</h3>
+                            <hr/>
+                            <p style={styles.p}>Кандидат фізико-математичних наук,  асистент</p>
                         </Thumbnail>
                     </Col>
                     <Col xs={6} md={4}>
@@ -80,13 +87,7 @@ export default class Personal extends Component {
                         </Thumbnail>
                     </Col>
 
-                    <Col xs={6} md={4}>
-                        <Thumbnail src="./src/teachers/fit.png" alt="242x200">
-                            <h3>Гарко Ірина Ігорівна</h3>
-                            <hr/>
-                            <p style={styles.p}>асистент</p>
-                        </Thumbnail>
-                    </Col>
+                
                 </Row>
             </Grid>
         )

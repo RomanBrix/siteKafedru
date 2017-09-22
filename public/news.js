@@ -11165,6 +11165,7 @@ var DOMRACHEV = exports.DOMRACHEV = './src/teachers/domrachev.jpg';
 var PIROG = exports.PIROG = './src/teachers/pirog.jpg';
 var MIRONOVA = exports.MIRONOVA = './src/teachers/mironova.jpg';
 var FENIK = exports.FENIK = './src/teachers/fenik.jpg';
+var GARKO = exports.GARKO = './src/teachers/garko.jpg';
 
 /***/ }),
 /* 139 */
@@ -48807,6 +48808,20 @@ var lessonsData = exports.lessonsData = [{
     time: '10:30',
     aud: '211'
 }, {
+    name: 'Гарко Ірина Ігорівна',
+    img: _Globals.GARKO,
+    theme: 'Числові характеристики випадкових величин',
+    date: '10.10.17',
+    time: '15:10',
+    aud: '204'
+}, {
+    name: 'Міронова  Вікторія Леонідівна',
+    img: _Globals.MIRONOVA,
+    theme: 'Javascript test Frameworks, як інструментарів модульного тестування',
+    date: '27.10.17',
+    time: '9:00',
+    aud: '203'
+}, {
     name: 'Духновська Ксенія Костянтинівна',
     img: _Globals.DUHNOVSKA,
     theme: 'Статичні поля і методи класів',
@@ -48820,13 +48835,6 @@ var lessonsData = exports.lessonsData = [{
     date: '2.10.17',
     time: '9:00',
     aud: '217'
-}, {
-    name: 'Міронова  Вікторія Леонідівна',
-    img: _Globals.MIRONOVA,
-    theme: 'Javascript test Frameworks, як інструментарів модульного тестування',
-    date: '27.10.17',
-    time: '9:00',
-    aud: '203'
 }, {
     name: 'Сокульський Олег Євгенович',
     img: _Globals.SOKULSKY,
@@ -48862,19 +48870,20 @@ var lessonsData = exports.lessonsData = [{
     date: '31.10.17',
     time: '13:40',
     aud: '217'
-}, {
-    name: 'Гарко Ірина Ігорівна',
-    img: _Globals.FIT,
-    theme: 'Числові характеристики випадкових величин',
-    date: '10.10.17',
-    time: '15:10',
-    aud: '204'
 }];
 
 var consultData = exports.consultData = [{
     name: 'Плескач Валентина Леонідівна',
     img: _Globals.PLESKACH,
     time: 'Понеділок 11:00 - 12:00'
+}, {
+    name: 'Гарко Ірина Ігорівна',
+    img: _Globals.GARKO,
+    time: 'Вівторок 16:30 – 17:30'
+}, {
+    name: 'Міронова  Вікторія Леонідівна',
+    img: _Globals.MIRONOVA,
+    time: 'П’ятниця 10:30 – 11:30'
 }, {
     name: 'Жихарєва Юлія Ігорівна',
     img: _Globals.JIHAREVA,
@@ -48883,10 +48892,6 @@ var consultData = exports.consultData = [{
     name: 'Духновська Ксенія Костянтинівна',
     img: _Globals.DUHNOVSKA,
     time: 'Вівторок 12:10 - 13:20'
-}, {
-    name: 'Міронова  Вікторія Леонідівна',
-    img: _Globals.MIRONOVA,
-    time: 'П’ятниця 10:30 – 11:30'
 }, {
     name: 'Сокульський Олег Євгенович',
     img: _Globals.SOKULSKY,
@@ -48907,10 +48912,6 @@ var consultData = exports.consultData = [{
     name: 'Сайко Володимир Григорович',
     img: _Globals.SAIKO,
     time: 'Вівторок 11:00 – 12:00'
-}, {
-    name: 'Гарко Ірина Ігорівна',
-    img: _Globals.FIT,
-    time: 'Вівторок 16:30 – 17:30'
 }];
 
 var NEWS = exports.NEWS = [{
