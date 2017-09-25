@@ -267,6 +267,11 @@ body{
     max-width: 350px;
     background: #343f64;
     color: white !important;
+    img{
+      height: 0 !important;
+      min-height: auto;
+      max-height: auto;
+    }
     .caption{
       display: flex;
       flex-direction: column;
@@ -311,4 +316,49 @@ body{
 
 .contact-main-containar{
   padding:  0 15px;
+}
+
+.myRow {
+  margin: 0;
+}
+
+.thumbnail>img {
+  max-height: 250px;
+  min-height: 250px;
+}
+.thumbnail {
+  min-height: 420px;
+}
+.thumbnail.aud {
+  min-height: 640px ;
+}
+.thumbnail.consult {
+  min-height: 440px;
+}
+
+#small{
+  font-size: .5em;
+}
+
+#Phone{
+  p{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+
+.slider-list{
+  height: 550px !important;
+  .slider-slide{
+    height: 100% !important;
+    .photo{
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 -50px;
+    }
+  }
 }

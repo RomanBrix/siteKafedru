@@ -15,7 +15,7 @@ export default class Data extends Component {
         }
         return(
             <Col xs={6} md={4}>
-                <Thumbnail src={item.img} alt="242x200">
+                <Thumbnail src={item.img} alt="242x200" bsClass="thumbnail aud">
                     <h3>{item.name}</h3>
                     <hr/>
                     <ListGroup fill>

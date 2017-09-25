@@ -18,7 +18,7 @@ export default class Contact extends Component {
         return(
             <Row className="vertical-line" style={{marginTop: "25px", paddingTop: '20px'}}>
                 <Col  md={4} xs={4}><Place style={style}/> вул. Ванди Василевської, 24, Київ, Україна</Col>
-                <Col  md={4} xs={4}> <Phone style={style}/> 0969239667</Col>
+                <Col  md={4} xs={4}> <Phone style={style}/><span style={{marginRight: "5px"}}> 0969239667,</span><span>044&nbsp;481&nbsp;44&nbsp;82</span></Col>
                 <Col  md={4} xs={4}><Email style={style}/> kafedra.pis@gmail.com</Col>
             </Row>
         )

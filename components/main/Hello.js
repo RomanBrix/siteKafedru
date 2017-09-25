@@ -12,7 +12,7 @@ import { NEWS } from '../../Data';
 export default class Hello extends Component {
 
     sorted(a,b){
-        return  a > b ?  1 : -1;
+        return  a > b ?  -1 : 1;
     }
 
     render(){

@@ -10,21 +10,21 @@ export const PUBLIC_LESSON = 'public_lesson.html';
 export const PROGRESS = 'progress.html';
 
 //social href
-export const ROMA_INSTA = 'https://www.instagram.com/roman_brix/';
+export const ROMA_INSTA = 'https://www.instagram.com/r.b.corp/';
 export const PIS_FACEBOOK = 'https://www.facebook.com/Кафедра-ПІС-1834681390130372/';
 export const MAIL_TO_PIS = 'mailto:kafedra.pis@gmail.com';
 export const PIS_MAP = 'https://goo.gl/maps/1t63aaqpe2U2';
 
 //img src
-export const SLIDER1 = './src/slider1.jpg';
-export const SLIDER2 = './src/slider2.jpg';
-export const SLIDER3 = './src/slider3.jpg';
-export const SLIDER4 = './src/slider4.jpg';
-export const SLIDER5 = './src/slider5.jpg';
-export const SLIDER6 = './src/slider6.jpg';
-export const SLIDER7 = './src/slider7.jpg';
+export const SLIDER2 = './src/slider1.jpg';
+export const SLIDER3 = './src/slider2.jpg';
+export const SLIDER4 = './src/slider3.jpg';
+export const SLIDER5 = './src/slider4.jpg';
+export const SLIDER1 = './src/slider5.jpg';
+// export const SLIDER6 = './src/slider6.jpg';
+// export const SLIDER7 = './src/slider7.jpg';
 
-export const SLIDERS = [SLIDER1,SLIDER2,SLIDER3,SLIDER4,SLIDER5,SLIDER6,SLIDER7];
+export const SLIDERS = [SLIDER1,SLIDER2,SLIDER3,SLIDER4,SLIDER5];
 
 export const FIT = './src/fit.png';
 export const TEST_LOGO = './src/test_logo.png';

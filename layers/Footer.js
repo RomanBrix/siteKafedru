@@ -41,7 +41,10 @@ render(){
                         <Col md={3}  xs={3}>
                             <span id="Phone">
                                 <Phone color={ blueA400 }/>
-                                <p><a href="tel:0969239667">096&nbsp;923&nbsp;96&nbsp;67</a></p>
+                                <p>
+                                    <a href="tel:0444814482">044&nbsp;481&nbsp;44&nbsp;82</a>
+                                    <a href="tel:0969239667">096&nbsp;923&nbsp;96&nbsp;67</a>
+                                </p>
                             </span>
                         </Col>
                         <Col md={3}  xs={3}>
@@ -59,7 +62,7 @@ render(){
                     </Row>
                     <Row>
                         <Col md={6} mdOffset={3} xs={6} xsOffset={3}>
-                            <p id="made">© Ann and <a href={ROMA_INSTA} target="_blank">Roman</a></p>
+                            <p id="made"><a href={ROMA_INSTA} target="_blank">by R.B.C.</a></p>
                         </Col>
                     </Row>
                 </Grid>

@@ -8,8 +8,6 @@ import {
     SLIDER3,
     SLIDER4,
     SLIDER5,
-    SLIDER6,
-    SLIDER7,
     SLIDERS
 } from '../../Globals';
 
@@ -18,8 +16,12 @@ export default class Slider extends Component {
         super(props);
         this.state = {
             index: 0,
-            direction: "next"
+            direction: null
         };
+    }
+    componentDidMount(){
+        const carus = document.getElementsByClassName("carousel")[0];
+        carus.carousel();
     }
         handleSelect(selectedIndex, e) {
             this.setState({
@@ -44,11 +46,16 @@ export default class Slider extends Component {
                     activeIndex={this.state.index}
                     direction={this.state.direction}
                     onSelect={this.handleSelect.bind(this)}
-                    interval={1200}
+                    interval={1000}
                     pauseOnHover={false}
-                    slide={true}
                 >
-                    { items }
+                {/* <Carousel.Item>
+                        <img
+                            alt="SLIDER1"
+                            src={SLIDER1}
+                        />
+                    </Carousel.Item> */}
+                    {items}
                 </Carousel>
             );
         }
