@@ -5,7 +5,12 @@ import {
 import {
     SLIDER1,
     SLIDER2,
-    SLIDER3
+    SLIDER3,
+    SLIDER4,
+    SLIDER5,
+    SLIDER6,
+    SLIDER7,
+    SLIDERS
 } from '../../Globals';
 
 export default class Slider extends Component {
@@ -13,7 +18,7 @@ export default class Slider extends Component {
         super(props);
         this.state = {
             index: 0,
-            direction: null
+            direction: "next"
         };
     }
         handleSelect(selectedIndex, e) {
@@ -24,29 +29,26 @@ export default class Slider extends Component {
         }
 
         render() {
+            const items = SLIDERS.map((item,index)=>{
+                return(
+                    <Carousel.Item key={index}>
+                        <img
+                            alt="SLIDER1"
+                            src={item}
+                        />
+                    </Carousel.Item>
+                )
+            })
             return (
                 <Carousel
                     activeIndex={this.state.index}
                     direction={this.state.direction}
                     onSelect={this.handleSelect.bind(this)}
-                    interval={1000}
+                    interval={1200}
                     pauseOnHover={false}
+                    slide={true}
                 >
-                    <Carousel.Item>
-                        <img
-                            alt="SLIDER3"
-                            src={SLIDER3}/>
-                        {/* <Carousel.Caption> */}
-                            {/* <h3>Викладачі</h3> */}
-                            {/* <p>Які справді Вас навчать</p> */}
-                        {/* </Carousel.Caption> */}
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            alt="SLIDER1"
-                            src={SLIDER1}/>
-                    </Carousel.Item>
-
+                    { items }
                 </Carousel>
             );
         }

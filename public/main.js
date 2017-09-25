@@ -11144,6 +11144,12 @@ var PIS_MAP = exports.PIS_MAP = 'https://goo.gl/maps/1t63aaqpe2U2';
 var SLIDER1 = exports.SLIDER1 = './src/slider1.jpg';
 var SLIDER2 = exports.SLIDER2 = './src/slider2.jpg';
 var SLIDER3 = exports.SLIDER3 = './src/slider3.jpg';
+var SLIDER4 = exports.SLIDER4 = './src/slider4.jpg';
+var SLIDER5 = exports.SLIDER5 = './src/slider5.jpg';
+var SLIDER6 = exports.SLIDER6 = './src/slider6.jpg';
+var SLIDER7 = exports.SLIDER7 = './src/slider7.jpg';
+
+var SLIDERS = exports.SLIDERS = [SLIDER1, SLIDER2, SLIDER3, SLIDER4, SLIDER5, SLIDER6, SLIDER7];
 
 var FIT = exports.FIT = './src/fit.png';
 var TEST_LOGO = exports.TEST_LOGO = './src/test_logo.png';
@@ -48448,7 +48454,7 @@ var Slider = function (_Component) {
 
         _this.state = {
             index: 0,
-            direction: null
+            direction: "next"
         };
         return _this;
     }
@@ -48464,29 +48470,27 @@ var Slider = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
+            var items = _Globals.SLIDERS.map(function (item, index) {
+                return _react2.default.createElement(
+                    _reactBootstrap.Carousel.Item,
+                    { key: index },
+                    _react2.default.createElement('img', {
+                        alt: 'SLIDER1',
+                        src: item
+                    })
+                );
+            });
             return _react2.default.createElement(
                 _reactBootstrap.Carousel,
                 {
                     activeIndex: this.state.index,
                     direction: this.state.direction,
                     onSelect: this.handleSelect.bind(this),
-                    interval: 1000,
-                    pauseOnHover: false
+                    interval: 1200,
+                    pauseOnHover: false,
+                    slide: true
                 },
-                _react2.default.createElement(
-                    _reactBootstrap.Carousel.Item,
-                    null,
-                    _react2.default.createElement('img', {
-                        alt: 'SLIDER3',
-                        src: _Globals.SLIDER3 })
-                ),
-                _react2.default.createElement(
-                    _reactBootstrap.Carousel.Item,
-                    null,
-                    _react2.default.createElement('img', {
-                        alt: 'SLIDER1',
-                        src: _Globals.SLIDER1 })
-                )
+                items
             );
         }
     }]);
