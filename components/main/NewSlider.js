@@ -8,6 +8,7 @@ import {
     SLIDER5,
     SLIDERS
 } from '../../Globals';
+// import Arrows from './Arrows';
 
 export default class NewSlider extends Component {
         render() {

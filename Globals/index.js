@@ -24,7 +24,7 @@ export const SLIDER1 = './src/slider5.jpg';
 // export const SLIDER6 = './src/slider6.jpg';
 // export const SLIDER7 = './src/slider7.jpg';
 
-export const SLIDERS = [SLIDER1,SLIDER2,SLIDER3,SLIDER4,SLIDER5];
+export const SLIDERS = [SLIDER1,SLIDER2,SLIDER3,SLIDER4];
 
 export const FIT = './src/fit.png';
 export const TEST_LOGO = './src/test_logo.png';

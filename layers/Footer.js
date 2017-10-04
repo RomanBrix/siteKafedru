@@ -24,7 +24,7 @@ render(){
         style = {
             position: 'absolute',
             bottom: '0',
-            width: '98%',
+            width: '100%',
             zIndex: '99999'
         }
     }
