@@ -27,7 +27,7 @@ export default class Container extends Component {
     }
 
     sorted(a,b){
-        return  a > b ?  -1 : 1;
+        return  a.id > b.id ?  -1 : 1;
     }
     render() {
         const sortedNews = NEWS.sort(this.sorted);        
@@ -36,7 +36,7 @@ export default class Container extends Component {
         return(
             <div className="news" key={index}>
                 <div className="logo">
-                    <img src={`./src/${item.img}`} />
+                    <img src={`./src/news/${item.img}`} />
                 </div>
                 <div className="info">
                     <h2>{item.title}</h2>
@@ -61,10 +61,11 @@ export default class Container extends Component {
           
         const sortedEvents = EVENTS.sort(this.sorted);
         const eventsCont = sortedEvents.map((item, index)=>{
+        
             return(
                 <div className="news" key={index}>
                     <div className="logo">
-                        <img src={`./src/${item.img}`} />
+                        <img src={`./src/news/${item.img}`} />
                     </div>
                     <div className="info">
                         <h2>{item.title}</h2>
