@@ -57,7 +57,7 @@ export default class Container extends Component {
 
                         <Tab
                             icon={<Edu />}
-                            label="Що ти вивчеш"
+                            label="Що ти вивчиш"
                         >
                             <CardTitle title="Наші викладачі навчать" subtitle="" />
                             <CardText>
@@ -130,7 +130,7 @@ export default class Container extends Component {
                         >
                             <CardTitle title="Можливі теми дипломних студентських робіт" subtitle="" />
                             <CardText>
-                                <ListGroup>
+                                {/* <ListGroup>
                                     <ListGroupItem>Розробка веб-орієнтованої інформаційної CRM-системи.</ListGroupItem>
                                     <ListGroupItem>Розробка програмного забезпечення для експрес-моніторингу забруднення навколишнього середовища.</ListGroupItem>
                                     <ListGroupItem>Розробка автоматизованої системи бюджетування проектів ІТ-компанії.</ListGroupItem>
@@ -144,7 +144,12 @@ export default class Container extends Component {
                                     <ListGroupItem>Розробка генетичних алгоритмів для розв’язання NP повних задач.</ListGroupItem>
                                     <ListGroupItem>Розробка системи підтримки рішень з управління кіберзахистом у корпоративній інформаційній системі.</ListGroupItem>
                                     <ListGroupItem>Розробка адаптивної експертної системи з інформаційної безпеки із використанням процедури кластеризації ознак аномалій</ListGroupItem>
-                                </ListGroup>
+                                </ListGroup> */}
+                                <div id="about-pdf">
+                                    <a href="https://drive.google.com/file/d/1md3PwNZ9m_2OBLS_gIsAmhePR7RbhzWH/view?usp=sharing" target="_blank">
+                                        <img src="./src/pdf.svg"  alt="PDF"/>
+                                    </a>
+                                </div>
                             </CardText>
                         </Tab>
                         <Tab

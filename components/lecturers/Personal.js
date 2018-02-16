@@ -30,13 +30,6 @@ export default class Personal extends Component {
                         </Thumbnail>
                     </Col>
                     <Col xs={6} md={4}>
-                        <Thumbnail src="./src/teachers/sokulsky.jpg" alt="242x200">
-                            <h3>Сокульський Олег Євгенович</h3>
-                            <hr/>
-                            <p style={styles.p}>доцент, к. т. н.</p>
-                        </Thumbnail>
-                    </Col>
-                    <Col xs={6} md={4}>
                         <Thumbnail src="./src/teachers/mironova.jpg" alt="242x200">
                             <h3>Міронова Вікторія Леонідівна </h3>
                             <hr/>
@@ -81,13 +74,13 @@ export default class Personal extends Component {
                         </Thumbnail>
                     </Col>
                     
-                    <Col xs={6} md={4}>
+                    {/* <Col xs={6} md={4}>
                         <Thumbnail src="./src/teachers/fenik.jpg" alt="242x200">
                             <h3>Феник Євгеній Олександрович</h3>
                             <hr/>
                             <p style={styles.p}>асистент</p>
                         </Thumbnail>
-                    </Col>  
+                    </Col>  */}
                 </Row>
             </Grid>
         )
