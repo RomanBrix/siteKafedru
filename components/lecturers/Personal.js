@@ -12,9 +12,24 @@ export default class Personal extends Component {
                 fontSize: "12px"
             }
         }
+        const { translate } = this.props;
+        console.log(translate);
+        const personalContainer = translate.map((item, index)=>{
+            return (
+                <Col xs={6} md={4} key={index}>
+                    <Thumbnail src={item.src} alt="242x200">
+                        <h3>{item.name}</h3>
+                        <hr/>
+                        <p style={styles.p}>{item.p}</p>
+                    </Thumbnail>
+                </Col>
+            )
+        })
         return(
             <Grid>
                 <Row>
+                    {personalContainer}
+                    {/*
                     <Col xs={6} md={4}>
                         <Thumbnail src="./src/teachers/pleskach.jpg" alt="242x200">
                             <h3>Плескач Валентина Леонідівна</h3>
@@ -73,14 +88,17 @@ export default class Personal extends Component {
                             <p style={styles.p}>асистент</p>
                         </Thumbnail>
                     </Col>
+                    */}
                     
-                    {/* <Col xs={6} md={4}>
+                    {/*
+                    <Col xs={6} md={4}>
                         <Thumbnail src="./src/teachers/fenik.jpg" alt="242x200">
                             <h3>Феник Євгеній Олександрович</h3>
                             <hr/>
                             <p style={styles.p}>асистент</p>
                         </Thumbnail>
-                    </Col>  */}
+                    </Col>
+                    */}
                 </Row>
             </Grid>
         )

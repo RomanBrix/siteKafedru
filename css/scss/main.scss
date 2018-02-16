@@ -160,7 +160,28 @@ body{
       //width: 100%;
       /* Set the fixed height of the footer here */
       //height: 60px;
-
+      .col-md-3, .col-xs-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          i {
+            font-size: 1.6em;
+            transition: .25s;
+          }
+          .icon-mail{
+            font-size: 1.3em;
+          }
+          &:hover {
+            i {
+              color: rgba(31, 188, 211, 1);
+            }
+          }
+        }
+      }
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       // background-image: linear-gradient(to bottom, #3c3c3c 0, #222 100%);

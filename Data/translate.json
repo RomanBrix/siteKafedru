@@ -12,8 +12,186 @@
       "news":"Новини",
       "contacts":"Контакти"
     },
+    "footer":{
+      "address": "Ванди Василевської, 24"
+    },
     "main":{
-        "head":"Вітаємо Вас на кафедрі прикладних інформаційних систем!"
+        "head":"Вітаємо Вас на кафедрі прикладних інформаційних систем!",
+      "paragraph": "Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем. Сподіваюсь, що наше спільне майбутнє принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій",
+      "btn": "Про кафедру"
+    },
+    "lecturers":{
+      "intro":{
+        "head":"Кафедра прикладних інформаційних систем",
+        "paragraph":[
+          "Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем.",
+          "Сподіваюсь, що наше спільне майбутнє  принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій. Ви не дарма обрали саме нашу кафедру, адже в нас, замість сухої теорії, студенти вивчають практичні знання, які допоможуть Вам стати кваліфікованим спеціалістом у майбутньому. Чекаємо Вас на кафедрі Прикладних Інформаційних Систем!"
+        ],
+        "small":[
+          "Плескач Валентина Леонідівна,",
+          "завідувач кафедри Прикладних Інформаційних Систем"
+        ]
+      },
+      "personal":[
+        {
+          "src":"./src/teachers/pleskach.jpg",
+          "name": "Плескач Валентина Леонідівна",
+          "p":"Доктор економічних наук, кандидат технічних наук, завідувач кафедри прикладних інформаційних систем"
+        },
+        {
+          "src":"./src/teachers/saiko.jpg",
+          "name":"Сайко Володимир Григорович",
+          "p":"професор, д.т. н."
+        },
+        {
+          "src":"./src/teachers/mironova.jpg",
+          "name":"Міронова Вікторія Леонідівна",
+          "p":"доцент, к. т. н."
+        },
+        {
+          "src":"./src/teachers/domrachev.jpg",
+          "name":"Домрачев Володимир Миколайович",
+          "p":"доцент, к. ф.-м. н."
+        },
+        {
+          "src":"./src/teachers/jihareva.jpg",
+          "name":"Жихарєва Юлія Ігорівна",
+          "p":"Кандидат фізико-математичних наук, асистент"
+        },
+        {
+          "src":"./src/teachers/garko.jpg",
+          "name":"Гарко Ірина Ігорівна",
+          "p":"Асистент"
+        },
+        {
+          "src":"./src/teachers/duhnovska.jpg",
+          "name":"Духновська Ксенія Костянтинівна",
+          "p":"Асистент"
+        },
+        {
+          "src":"./src/teachers/pirog.jpg",
+          "name":"Пирог Микола Володимирович",
+          "p":"Асистент"
+        }
+      ]
+    },
+    "consultation":{
+      "personal":[
+        {
+          "src":"./src/teachers/pleskach.jpg",
+          "name": "Плескач Валентина Леонідівна",
+          "p":"Понеділок 11:00 - 12:00"
+        },
+        {
+          "src":"./src/teachers/saiko.jpg",
+          "name":"Сайко Володимир Григорович",
+          "p":"Вівторок 11:00 – 12:00"
+        },
+        {
+          "src":"./src/teachers/mironova.jpg",
+          "name":"Міронова Вікторія Леонідівна",
+          "p":"П’ятниця 10:30 – 11:30"
+        },
+        {
+          "src":"./src/teachers/domrachev.jpg",
+          "name":"Домрачев Володимир Миколайович",
+          "p":"Понеділок 12:00 - 13:00"
+        },
+        {
+          "src":"./src/teachers/jihareva.jpg",
+          "name":"Жихарєва Юлія Ігорівна",
+          "p":"Вівторок 13:40 – 14:40"
+        },
+        {
+          "src":"./src/teachers/garko.jpg",
+          "name":"Гарко Ірина Ігорівна",
+          "p":"Вівторок 16:30 – 17:30"
+        },
+        {
+          "src":"./src/teachers/duhnovska.jpg",
+          "name":"Духновська Ксенія Костянтинівна",
+          "p":"Вівторок 12:10 - 13:20"
+        },
+        {
+          "src":"./src/teachers/pirog.jpg",
+          "name":"Пирог Микола Володимирович",
+          "p":"Вівторок 11:00 – 12:00"
+        }
+      ]
+    },
+    "public_lesson":{
+      "static":{
+        "topic":"Тема",
+        "date":"Дата",
+        "time":"Час",
+        "aud":"Ауд"
+      },
+      "personal":[
+        {
+          "src":"./src/teachers/pleskach.jpg",
+          "name": "Плескач Валентина Леонідівна",
+          "topic":"Булева алгебра",
+          "date":"9.10.17",
+          "time":"10:30",
+          "aud":"211"
+        },
+        {
+          "src":"./src/teachers/saiko.jpg",
+          "name":"Сайко Володимир Григорович",
+          "topic":"Компресія динамічних зображень",
+          "date":"31.10.17",
+          "time":"13:40",
+          "aud":"217"
+        },
+        {
+          "src":"./src/teachers/mironova.jpg",
+          "name":"Міронова Вікторія Леонідівна",
+          "topic":"Javascript test Frameworks, як інструментарів модульного тестування",
+          "date":"27.10.17",
+          "time":"09:00",
+          "aud":"203"
+        },
+        {
+          "src":"./src/teachers/domrachev.jpg",
+          "name":"Домрачев Володимир Миколайович",
+          "topic":"Сучасні інструменти бізнес – аналітики. Теорія та практика побудови скорингових карт у системі SAS enterprise mainer",
+          "date":"02.10.17",
+          "time":"12:10",
+          "aud":"318"
+        },
+        {
+          "src":"./src/teachers/jihareva.jpg",
+          "name":"Жихарєва Юлія Ігорівна",
+          "topic":"Функція багатьох змінних",
+          "date":"2.10.17",
+          "time":"09:00",
+          "aud":"217"
+        },
+        {
+          "src":"./src/teachers/garko.jpg",
+          "name":"Гарко Ірина Ігорівна",
+          "topic":"Числові характеристики випадкових величин",
+          "date":"9.10.17",
+          "time":"15:10",
+          "aud":"204"
+        },
+        {
+          "src":"./src/teachers/duhnovska.jpg",
+          "name":"Духновська Ксенія Костянтинівна",
+          "topic":"Статичні поля і методи класів",
+          "date":"30.10.17",
+          "time":"13:40",
+          "aud":"217"
+        },
+        {
+          "src":"./src/teachers/pirog.jpg",
+          "name":"Пирог Микола Володимирович",
+          "topic":"Множини діаграми Ейгера-Вена",
+          "date":"21.09.17",
+          "time":"10:30",
+          "aud":"213"
+        }
+      ]
     }
   },
   "eng":{
@@ -29,8 +207,186 @@
       "news":"News",
       "contacts":"Contacts"
     },
+    "footer":{
+      "address": "Vandy Vasilevskaya, 24"
+    },
     "main":{
-      "head":"Hello"
+      "head":"Welcome to the Department of Applied Information Systems!",
+      "paragraph": "Sincerely congratulate you, dear student, on the Department of Applied Information Systems. I hope that our common future brings you real aesthetic pleasure from learning advanced information technology",
+      "btn": "About the department"
+    },
+    "lecturers":{
+      "intro":{
+        "head":"Department of Applied Information Systems",
+        "paragraph":[
+          "Sincerely congratulate you, dear student, on the Department of Applied Information Systems.",
+          "I hope that our common future will bring you real aesthetic pleasure from learning advanced information technology. You have chosen not only our department, because in our place, instead of dry theory, students learn practical knowledge that will help you become a qualified specialist in the future. We are waiting for you at the Department of Applied Information Systems!"
+        ],
+        "small":[
+          "Pleskach Valentina Leonidovna,",
+          "Head of the Department of Applied Information Systems"
+        ]
+      },
+      "personal":[
+        {
+          "src":"./src/teachers/pleskach.jpg",
+          "name": "Pleskach Valentina Leonidovna",
+          "p":"Doctor of Economics, candidate of technical sciences, Head of the Department of Applied Information Systems"
+        },
+        {
+          "src":"./src/teachers/saiko.jpg",
+          "name":"Saiko Vladimir Grigorievich",
+          "p":"professor, d.t.n."
+        },
+        {
+          "src":"./src/teachers/mironova.jpg",
+          "name":"Mironova Victoria Leonidovna",
+          "p":"Associate Professor, k. t. n."
+        },
+        {
+          "src":"./src/teachers/domrachev.jpg",
+          "name":"Domrachev Vladimir Nikolaevich",
+          "p":"docent, Candidate of Physics and Mathematics"
+        },
+        {
+          "src":"./src/teachers/jihareva.jpg",
+          "name":"Zhikhareva Julia Igorivna",
+          "p":"Candidate of Physics and Mathematics, assistant"
+        },
+        {
+          "src":"./src/teachers/garko.jpg",
+          "name":"Garko Irina Igorevna",
+          "p":"Assistant"
+        },
+        {
+          "src":"./src/teachers/duhnovska.jpg",
+          "name":"Dukhnovska Ksenia Konstantinovna",
+          "p":"Assistant"
+        },
+        {
+          "src":"./src/teachers/pirog.jpg",
+          "name":"Pirog Nikolai Volodymyrovych",
+          "p":"Assistant"
+        }
+      ]
+    },
+    "consultation":{
+      "personal":[
+        {
+          "src":"./src/teachers/pleskach.jpg",
+          "name": "Pleskach Valentina Leonidovna",
+          "p":"Monday 11:00 - 12:00"
+        },
+        {
+          "src":"./src/teachers/saiko.jpg",
+          "name":"Saiko Vladimir Grigorievich",
+          "p":"Tuesday 11:00 – 12:00"
+        },
+        {
+          "src":"./src/teachers/mironova.jpg",
+          "name":"Mironova Victoria Leonidovna",
+          "p":"Friday 10:30 – 11:30"
+        },
+        {
+          "src":"./src/teachers/domrachev.jpg",
+          "name":"Domrachev Vladimir Nikolaevich",
+          "p":"Monday 12:00 - 13:00"
+        },
+        {
+          "src":"./src/teachers/jihareva.jpg",
+          "name":"Zhikhareva Julia Igorivna",
+          "p":"Tuesday 13:40 – 14:40"
+        },
+        {
+          "src":"./src/teachers/garko.jpg",
+          "name":"Garko Irina Igorevna",
+          "p":"Tuesday 16:30 – 17:30"
+        },
+        {
+          "src":"./src/teachers/duhnovska.jpg",
+          "name":"Dukhnovska Ksenia Konstantinovna",
+          "p":"Tuesday 12:10 - 13:20"
+        },
+        {
+          "src":"./src/teachers/pirog.jpg",
+          "name":"Pirog Nikolai Volodymyrovych",
+          "p":"Tuesday 11:00 – 12:00"
+        }
+      ]
+    },
+    "public_lesson":{
+      "static":{
+        "topic":"Topic",
+        "date":"Date",
+        "time":"Time",
+        "aud":"Aud"
+      },
+      "personal":[
+        {
+          "src":"./src/teachers/pleskach.jpg",
+          "name": "Pleskach Valentina Leonidovna",
+          "topic":"Boolean algebra",
+          "date":"9.10.17",
+          "time":"10:30",
+          "aud":"211"
+        },
+        {
+          "src":"./src/teachers/saiko.jpg",
+          "name":"Saiko Vladimir Grigorievich",
+          "topic":"Compression of dynamic images",
+          "date":"31.10.17",
+          "time":"13:40",
+          "aud":"217"
+        },
+        {
+          "src":"./src/teachers/mironova.jpg",
+          "name":"Mironova Victoria Leonidovna",
+          "topic":"Javascript test frameworks as modular testing tools",
+          "date":"27.10.17",
+          "time":"09:00",
+          "aud":"203"
+        },
+        {
+          "src":"./src/teachers/domrachev.jpg",
+          "name":"Domrachev Vladimir Nikolaevich",
+          "topic":"Modern business analytics tools. Theory and practice of constructing scoring cards in SAS enterprise mainer system",
+          "date":"02.10.17",
+          "time":"12:10",
+          "aud":"318"
+        },
+        {
+          "src":"./src/teachers/jihareva.jpg",
+          "name":"Zhikhareva Julia Igorivna",
+          "topic":"The function of many variables",
+          "date":"2.10.17",
+          "time":"09:00",
+          "aud":"217"
+        },
+        {
+          "src":"./src/teachers/garko.jpg",
+          "name":"Garko Irina Igorevna",
+          "topic":"Numerical characteristics of random variables",
+          "date":"9.10.17",
+          "time":"15:10",
+          "aud":"204"
+        },
+        {
+          "src":"./src/teachers/duhnovska.jpg",
+          "name":"Dukhnovska Ksenia Konstantinovna",
+          "topic":"Static fields and class methods",
+          "date":"30.10.17",
+          "time":"13:40",
+          "aud":"217"
+        },
+        {
+          "src":"./src/teachers/pirog.jpg",
+          "name":"Pirog Nikolai Volodymyrovych",
+          "topic":"The plots of the Eiger-Vienna diagram",
+          "date":"21.09.17",
+          "time":"10:30",
+          "aud":"213"
+        }
+      ]
     }
   }
 }

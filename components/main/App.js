@@ -3,7 +3,7 @@ import Header from '../../layers/Header';
 import Footer from '../../layers/Footer';
 import NewSlider from './NewSlider';
 import Hello from'./Hello';
-import { getLanguage, getCookie } from '../functions/index.js';
+import { getLanguage, getCookie } from '../functions';
 
 export default class App extends Component {
     constructor(props) {

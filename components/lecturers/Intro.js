@@ -22,14 +22,17 @@ export default class Intro extends Component {
                 paddingLeft: '6px'
             }
         };
+        const {translate} = this.props;
+        console.log(translate);
+
         return(
             <Row bsClass="row myRow">
                 <Col xs={10} md={10}  mdOffset={1} xsOffset={1}>
                     <Jumbotron>
-                        <h1 style={styles.h1}>Кафедра прикладних інформаційних систем</h1>
+                        <h1 style={styles.h1}>{translate.head}</h1>
                         <blockquote>
-                            <p style={styles.p}>Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем. <br/> Сподіваюсь, що наше спільне майбутнє  принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій. Ви не дарма обрали саме нашу кафедру, адже в нас, замість сухої теорії, студенти вивчають практичні знання, які допоможуть Вам стати кваліфікованим спеціалістом у майбутньому. Чекаємо Вас на кафедрі Прикладних Інформаційних Систем!</p>
-                            <small>Плескач Валентина Леонідівна, <cite title="Source Title">завідувач кафедри Прикладних Інформаційних Систем</cite></small>
+                            <p style={styles.p}>{translate.paragraph[0]} <br/> {translate.paragraph[1]}</p>
+                            <small>{translate.small[0]} <cite title="Source Title">{translate.small[1]}</cite></small>
                         </blockquote>
                     </Jumbotron>
                 </Col>

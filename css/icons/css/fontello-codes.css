@@ -1,4 +1,10 @@
 
 .icon-globe:before { content: '\e800'; } /* '' */
 .icon-globe-1:before { content: '\e801'; } /* '' */
+.icon-mail:before { content: '\e802'; } /* '' */
+.icon-facebook-circled:before { content: '\e803'; } /* '' */
+.icon-phone:before { content: '\e804'; } /* '' */
+.icon-phone-circled:before { content: '\e805'; } /* '' */
+.icon-location:before { content: '\e806'; } /* '' */
+.icon-location-circled:before { content: '\e807'; } /* '' */
 .icon-language:before { content: '\f1ab'; } /* '' */

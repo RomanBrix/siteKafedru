@@ -3,13 +3,14 @@ import {
     Grid,
     Row
 } from 'react-bootstrap';
-import { lessonsData } from '../../Data';
+// import { lessonsData } from '../../Data';
 import Data from './Data';
 
 export default class Personal extends Component {
     render(){
-        const container = lessonsData.map((item, index)=>{
-           return <Data item={ item } key={ index }/>
+        const { translate } = this.props;
+        const container = translate.personal.map((item, index)=>{
+           return <Data item={ item } key={ index } translate={translate.static}/>
         });
         return(
             <Grid>

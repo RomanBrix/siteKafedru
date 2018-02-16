@@ -47,9 +47,9 @@ export default class Hello extends Component {
                         src={ FIT }
                         alt="FIT" >
                         <h3>{translate.head}</h3>
-                        <p>Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем. Сподіваюсь, що наше спільне майбутнє  принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій</p>
+                        <p>{translate.paragraph}</p>
                         <p>
-                            <Button bsStyle="primary" href={ ABOUT }>Про кафедру</Button>
+                            <Button bsStyle="primary" href={ ABOUT }>{translate.btn}</Button>
                         </p>
                     </Thumbnail>
                     <Thumbnail
@@ -64,9 +64,3 @@ export default class Hello extends Component {
         )
     }
 };
-/*
- <div className="row">
- <div className="col-md-6 col-md-offset-3" id="Hello">sdsd</div>
-
- </div>
- */

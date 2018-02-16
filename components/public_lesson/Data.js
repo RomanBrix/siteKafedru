@@ -5,9 +5,10 @@ import {
     ListGroup,
     ListGroupItem
 } from 'react-bootstrap';
+
 export default class Data extends Component {
     render(){
-        const { item } = this.props;
+        const { item, translate } = this.props;
         const style = {
             position: 'relative',
             right: '0',
@@ -15,14 +16,14 @@ export default class Data extends Component {
         }
         return(
             <Col xs={6} md={4}>
-                <Thumbnail src={item.img} alt="242x200" bsClass="thumbnail aud">
+                <Thumbnail src={item.src} alt="242x200" bsClass="thumbnail aud">
                     <h3>{item.name}</h3>
                     <hr/>
                     <ListGroup fill>
-                        <ListGroupItem bsStyle="info">Тема: <br/><span style={style}>{item.theme}</span></ListGroupItem>
-                        <ListGroupItem bsStyle="success">Дата:  <span style={style}>{item.date}</span></ListGroupItem>
-                        <ListGroupItem bsStyle="warning">Час: <span style={style}>{item.time}</span></ListGroupItem>
-                        <ListGroupItem bsStyle="danger">Ауд: <span style={style}>{item.aud}</span></ListGroupItem>
+                        <ListGroupItem bsStyle="info">{translate.topic}: <br/><span style={style}>{item.topic}</span></ListGroupItem>
+                        <ListGroupItem bsStyle="success">{translate.date}:  <span style={style}>{item.date}</span></ListGroupItem>
+                        <ListGroupItem bsStyle="warning">{translate.time}: <span style={style}>{item.time}</span></ListGroupItem>
+                        <ListGroupItem bsStyle="danger">{translate.aud}: <span style={style}>{item.aud}</span></ListGroupItem>
                     </ListGroup>
                 </Thumbnail>
             </Col>
