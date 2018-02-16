@@ -16,6 +16,7 @@ export default class Hello extends Component {
     }
 
     render(){
+        const {translate} = this.props;
         const sortedNews = NEWS.sort(this.sorted);
         const newsContainer = sortedNews.map((item, index)=>{
             if (index > 1) return;
@@ -45,7 +46,7 @@ export default class Hello extends Component {
                         }}
                         src={ FIT }
                         alt="FIT" >
-                        <h3>Вітаємо Вас на кафедрі прикладних інформаційних систем!</h3>
+                        <h3>{translate.head}</h3>
                         <p>Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем. Сподіваюсь, що наше спільне майбутнє  принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій</p>
                         <p>
                             <Button bsStyle="primary" href={ ABOUT }>Про кафедру</Button>

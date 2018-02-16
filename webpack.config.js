@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const NODE_ENV = process.env.NODE_ENV || 'prod'
+const NODE_ENV = process.env.NODE_ENV || 'dev';
 
 module.exports= {
     entry: {

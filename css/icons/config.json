@@ -1,0 +1,42 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "4fc9b8c122d1b5ca3df42a104a655e8b",
+      "css": "language",
+      "code": 61867,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1e89103762be72b0720eda0468e62b90",
+      "css": "globe",
+      "code": 59392,
+      "src": "linecons"
+    },
+    {
+      "uid": "197375a3cea8cb90b02d06e4ddf1433d",
+      "css": "globe-1",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e8f6d72f569992b88bddde2d85c4b44a",
+      "css": "noun_90366_cc",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M400 48C205.6 48 48 205.6 48 400 48 594.4 205.6 752 400 752S752 594.4 752 400C752 205.6 594.4 48 400 48ZM400 696C236.5 696 104 563.5 104 400S236.5 104 400 104 696 236.5 696 400 563.5 696 400 696ZM400 136C254.2 136 136 254.2 136 400S254.2 664 400 664 664 545.8 664 400 545.8 136 400 136ZM514.6 536H286.6L311.8 416.6 264 440.3 272 400.7 320.1 378.4 354.3 216H426.1L399.7 340.7 440 320.3 432 360.6 391.3 380.6 370.7 480H527.3L514.6 536Z",
+        "width": 800
+      },
+      "search": [
+        "noun_90366_cc"
+      ]
+    }
+  ]
+}

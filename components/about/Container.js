@@ -130,21 +130,6 @@ export default class Container extends Component {
                         >
                             <CardTitle title="Можливі теми дипломних студентських робіт" subtitle="" />
                             <CardText>
-                                {/* <ListGroup>
-                                    <ListGroupItem>Розробка веб-орієнтованої інформаційної CRM-системи.</ListGroupItem>
-                                    <ListGroupItem>Розробка програмного забезпечення для експрес-моніторингу забруднення навколишнього середовища.</ListGroupItem>
-                                    <ListGroupItem>Розробка автоматизованої системи бюджетування проектів ІТ-компанії.</ListGroupItem>
-                                    <ListGroupItem>Розробка і моделювання розподіленої системи керування вантажними механізмами.</ListGroupItem>
-                                    <ListGroupItem>Розробка програмного забезпечення автоматизації складського обліку.</ListGroupItem>
-                                    <ListGroupItem>Інформаційна система вибору маршруту автотранспортного сполучення.</ListGroupItem>
-                                    <ListGroupItem>Програмна реалізація оцінки вартості житлових та нежитлових приміщень.</ListGroupItem>
-                                    <ListGroupItem>Проектування та програмна реалізація системи для складання розкладу занять ВНЗ.</ListGroupItem>
-                                    <ListGroupItem>Моделювання економічних динамічних систем через диференціальні рівняння або їх системи.</ListGroupItem>
-                                    <ListGroupItem>Програмна реалізація моделі соціальної мобілізації.</ListGroupItem>
-                                    <ListGroupItem>Розробка генетичних алгоритмів для розв’язання NP повних задач.</ListGroupItem>
-                                    <ListGroupItem>Розробка системи підтримки рішень з управління кіберзахистом у корпоративній інформаційній системі.</ListGroupItem>
-                                    <ListGroupItem>Розробка адаптивної експертної системи з інформаційної безпеки із використанням процедури кластеризації ознак аномалій</ListGroupItem>
-                                </ListGroup> */}
                                 <div id="about-pdf">
                                     <a href="https://drive.google.com/file/d/1md3PwNZ9m_2OBLS_gIsAmhePR7RbhzWH/view?usp=sharing" target="_blank">
                                         <img src="./src/pdf.svg"  alt="PDF"/>

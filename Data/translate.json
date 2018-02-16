@@ -1,5 +1,36 @@
 {
   "ua":{
-
+    "header":{
+      "main": "Головна",
+      "about": "Про кафедру",
+      "applicants": "Абітурієнтам",
+      "teachers":"Викладачі",
+      "department": "Розвиток Кафедри",
+      "schedule": "Графік",
+      "consultation":"Консультацій",
+      "openLessons":"Відкритих Занять",
+      "news":"Новини",
+      "contacts":"Контакти"
+    },
+    "main":{
+        "head":"Вітаємо Вас на кафедрі прикладних інформаційних систем!"
+    }
+  },
+  "eng":{
+    "header":{
+      "main": "Main",
+      "about": "About",
+      "applicants": "Applicants",
+      "teachers":"Teachers",
+      "department": "Department",
+      "schedule": "Schedule",
+      "consultation":"Consultation",
+      "openLessons":"Open Lessons",
+      "news":"News",
+      "contacts":"Contacts"
+    },
+    "main":{
+      "head":"Hello"
+    }
   }
 }

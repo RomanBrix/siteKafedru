@@ -1,20 +1,33 @@
 import React, {Component} from 'react';
 import Header from '../../layers/Header';
 import Footer from '../../layers/Footer';
-// import Slider from './Slider';
 import NewSlider from './NewSlider';
 import Hello from'./Hello';
+import { getLanguage, getCookie } from '../functions/index.js';
 
 export default class App extends Component {
-render(){
+    constructor(props) {
+        super(props);
+        this.state = {
+            translate: getLanguage(getCookie("language")).main || getLanguage("ua").main
+        }
+    }
+    changeLang(){
+        this.setState({
+            translate: getLanguage(getCookie("language")).main
+        })
+    }
+
+    render(){
+        const { translate } = this.state;
+
     return (
         <div>
-            <Header/>
+            <Header changeLang={this.changeLang.bind(this)}/>
             <div className="sliderContainer">
-                 {/*<Slider/>*/}
                 <NewSlider/>
             </div>
-            <Hello/>
+            <Hello translate={translate} />
             <Footer/>
         </div>
     );
