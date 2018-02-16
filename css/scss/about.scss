@@ -25,4 +25,27 @@
       min-height: 450px !important;
     }
   }
+
+  #about-pdf{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      text-decoration: none;
+      height: auto;
+      min-height: 150px;
+      width: 150px;
+      img{
+        max-width: 150px;
+        height: auto;
+        transition: .25s;
+
+        &:hover{
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
 }
