@@ -6347,7 +6347,7 @@ var _assign = __webpack_require__(14);
 
 var EventPluginRegistry = __webpack_require__(82);
 var ReactEventEmitterMixin = __webpack_require__(454);
-var ViewportMetrics = __webpack_require__(140);
+var ViewportMetrics = __webpack_require__(141);
 
 var getVendorPrefixedEventName = __webpack_require__(489);
 var isEventSupported = __webpack_require__(132);
@@ -6673,7 +6673,7 @@ module.exports = ReactBrowserEventEmitter;
 
 
 var SyntheticUIEvent = __webpack_require__(58);
-var ViewportMetrics = __webpack_require__(140);
+var ViewportMetrics = __webpack_require__(141);
 
 var getEventModifierState = __webpack_require__(130);
 
@@ -11189,6 +11189,68 @@ module.exports = lowPriorityWarning;
 
 
 Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.getLanguage = getLanguage;
+exports.getCookie = getCookie;
+exports.setCookie = setCookie;
+
+var _translate = __webpack_require__(234);
+
+var _translate2 = _interopRequireDefault(_translate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function getLanguage(state) {
+    console.log("in func");
+    var translate = {};
+    switch (state) {
+        case 'ua':
+            translate = _translate2.default.ua;
+            break;
+        case 'eng':
+            translate = _translate2.default.eng;
+            break;
+    }
+    return translate;
+}
+function getCookie(name) {
+    var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function setCookie(name, value, options) {
+    options = options || {};
+
+    var expires = options.expires;
+    if (typeof expires === 'number' && expires) {
+        var date = new Date();
+        date.setTime(date.getTime() + expires * 1000 * 60 * 60);
+        expires = options.expires = date;
+    }
+    if (expires && expires.toUTCString()) {
+        options.expires = expires.toUTCString();
+    }
+    value = encodeURIComponent(value);
+    var updatedCookie = name + "=" + value;
+    for (var propName in options) {
+        updatedCookie += "; " + propName;
+        var propValue = options[propName];
+        if (propValue !== true) {
+            updatedCookie += "=" + propValue;
+        }
+    }
+    document.cookie = updatedCookie;
+}
+
+/***/ }),
+/* 138 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 //href to html
@@ -11242,13 +11304,13 @@ var FENIK = exports.FENIK = './src/teachers/fenik.jpg';
 var GARKO = exports.GARKO = './src/teachers/garko.jpg';
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(241), __esModule: true };
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11497,7 +11559,7 @@ function lighten(color, coefficient) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11525,68 +11587,6 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-
-/***/ }),
-/* 141 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.getLanguage = getLanguage;
-exports.getCookie = getCookie;
-exports.setCookie = setCookie;
-
-var _translate = __webpack_require__(234);
-
-var _translate2 = _interopRequireDefault(_translate);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function getLanguage(state) {
-    console.log("in func");
-    var translate = {};
-    switch (state) {
-        case 'ua':
-            translate = _translate2.default.ua;
-            break;
-        case 'eng':
-            translate = _translate2.default.eng;
-            break;
-    }
-    return translate;
-}
-function getCookie(name) {
-    var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
-}
-
-function setCookie(name, value, options) {
-    options = options || {};
-
-    var expires = options.expires;
-    if (typeof expires === 'number' && expires) {
-        var date = new Date();
-        date.setTime(date.getTime() + expires * 1000 * 60 * 60);
-        expires = options.expires = date;
-    }
-    if (expires && expires.toUTCString()) {
-        options.expires = expires.toUTCString();
-    }
-    value = encodeURIComponent(value);
-    var updatedCookie = name + "=" + value;
-    for (var propName in options) {
-        updatedCookie += "; " + propName;
-        var propValue = options[propName];
-        if (propValue !== true) {
-            updatedCookie += "=" + propValue;
-        }
-    }
-    document.cookie = updatedCookie;
-}
 
 /***/ }),
 /* 142 */
@@ -19551,7 +19551,7 @@ if(false) {
 
 exports.__esModule = true;
 
-var _from = __webpack_require__(138);
+var _from = __webpack_require__(139);
 
 var _from2 = _interopRequireDefault(_from);
 
@@ -19581,7 +19581,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _SvgIcon = __webpack_require__(541);
+var _SvgIcon = __webpack_require__(540);
 
 var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 
@@ -19598,7 +19598,7 @@ exports.default = _SvgIcon2.default;
 
 exports.__esModule = true;
 
-var _shouldUpdate = __webpack_require__(560);
+var _shouldUpdate = __webpack_require__(559);
 
 var _shouldUpdate2 = _interopRequireDefault(_shouldUpdate);
 
@@ -20721,6 +20721,157 @@ module.exports = {
 					"aud": "213"
 				}
 			]
+		},
+		"progress": {
+			"top": {
+				"head1": "Програма розвитку кафедри",
+				"head3": "прикладних інформаційних систем",
+				"head4": "факультету інформаційних технологій",
+				"head5": "Київського національного університету імені Тараса Шевченка"
+			},
+			"bottom": {
+				"head5": "Орієнтовний план розвитку кафедри прикладних інформаційних систем підготувала завідувач кафедри прикладних інформаційних систем факультету інформаційних технологій Київського національного університету імені Тараса Шевченка, кандидат технічних наук, доктор економічних наук, професор",
+				"author": "Плескач Валентина Леонідівна",
+				"head4": "Обговорено та прийнято за основу рішенням кафедри (витяг із протоколу засідання кафедри № 13 від 24 квітня 2017 р.)"
+			},
+			"file": {
+				"caution": "Осторожно",
+				"p": "Убивает время"
+			}
+		},
+		"contacts": {
+			"name": "Ім'я",
+			"nameVar": "Всеволод",
+			"msg": "Повідомлення",
+			"msgVar": "Коли буде інтернет в корпусі?",
+			"map": " вул. Ванди Василевської, 24, Київ, Україна"
+		},
+		"applicants": {
+			"case0": {
+				"li1": "Забезпечення іногородніх студентів першого курсам місцями в гуртожитках, з доступом до мережі Internet, WI-FI.",
+				"li2": "Забезпечення 45% рейтинга студентів першого курсу бюджетної форми навчання стипендією",
+				"li3": "Постійне проведення спільних науково - практичних конференцій, виконання студентських проектів, організація «круглих столів», семінарів, олімпіад серед студентської молоді.",
+				"li4": "Розвинена система спортивних секцій з багатьох видів спорту. Діють спортзал, стадіон, спортивний майданчик; можливість увійти до складу збірних команд університету."
+			},
+			"case1": {
+				"li1": "До заяви абітурієнт приносить",
+				"li2": "Документ про повну загальну середню освіту (оригінал або його завірену копію);",
+				"li3": "Сертифікат з трьох предметів: українська мова та література, математика, фізика або іноземна мова за вибором;",
+				"li4": "Медичну довідку за формою 086-У;",
+				"li5": "6 кольорових фото розміром 3х4 см;",
+				"li6": "Копію довідки про присвоєння ідентифікаційного коду, три поштових конверти з марками, папку-обкладинку, конверти форматів А4, А5;",
+				"li7": "Паспорт, військовий квиток або посвідчення про приписку до призовної дільниці та документи, що дають право на пільги, вступник пред'являє особисто в терміни, визначені для подання документів"
+			},
+			"case2": {
+				"head": "За додатковою інформацією - зв'яжіться з нами!",
+				"label": "Зв'язатися"
+			},
+			"content": {
+				"title": "Абітурієнтам",
+				"p1": "Кафедра прикладних інформаційних систем запрошує на навчання абітурієнтів на навчальну програму «Прикладне програмування » спеціальності 122 «Комп'ютерні науки»",
+				"p2": [
+					"Програма подвійних дипломів",
+					" вища школа бізнеса в ",
+					"Домброві (ПОЛЬША)",
+					" та комп'ютерна школа ",
+					"ЛІДС (ВЕЛИКОБРИТАНИЯ)",
+					" (факультети информатики, менеджмента)",
+					"Термін навчання: денна - 4 роки та інші."
+				],
+				"caseHead": [
+					"Наші пріоритети",
+					"Прийом документів",
+					"Додаткова інформація"
+				],
+				"finish": [
+					"Чекаємо Вас на парах! ",
+					"Продивитись ще раз",
+					"Назад",
+					"Закінчити",
+					"Далі"
+				]
+			}
+		},
+		"about": {
+			"pop": "Продивитись/Завантажити",
+			"label1": "Загалом",
+			"title1": "Кафедра прикладних інформаційних систем",
+			"p1": "Кафедра прикладних інформаційних систем заснована у червні місяці 2016 року. На кафедрі працюють  висококваліфіковані викладачі, які мають значний педагогічний і практичний комерційний досвід у розробленні та застосуванні сучасних інформаційних технологій. Прикладні системи – це програмні засоби, призначені для розв’язання прикладних задач та орієнтовані на автоматизацію конкретних видів економічної або іншої діяльності.",
+			"label2": "Детальнiше",
+			"title2": "Прикладні інформаційні системи",
+			"p2": "Прикладні інформаційні системи – це перспективний напрям навчання і діяльності, адже зачіпає питання впровадження інновацій у різні види діяльності. Це трансдисциплінарна наука, що об’єднує різноманітні сектори та напрями діяльності і галузей знань. Прикладні інформаційні системи є тим двигуном, без якого практично неможливо розв’язати задачі прикладних сфер, як-от, ІТ в агросекторі, електроенергетиці, машинобудуванні, фінансах і банківській діяльності тощо. Наприклад, економіка зараз трансформується у цифрову, форма організації праці у мережеву, а підприємства стають віртуальними. Нині неможливо уявити роботу фахівця галузі інформаційних технологій без комп’ютера, мережі, інформаційної системи. Адже практично кожну прикладну задачу виконують за допомогою певних програмних продуктів: 1С, Галактика, Парус, Audit Expert, Risky Project, Master MRP та інші. Студенти впродовж навчання отримують фундаментальні знання у сфері аналітики, розроблення і впровадження застосунків у сфері економіки і фінансів, медицини, освіти, науки тощо.",
+			"label3": "Що ти вивчиш",
+			"title3": "Наші викладачі навчать",
+			"li3": [
+				"застосовувати методи та програмні засоби оптимізації для розв’язання прикладних задач",
+				"розробляти системи підтримки прийняття рішень",
+				"розв’язувати задачі прогнозування і моделювання процесів різних прикладних сфер і здійснювати їх системний аналіз",
+				"розробляти бази (сховища) даних або знань, обирати їх системи керування",
+				"розробляти математичні модельні рішення складних процесів",
+				"розробляти і впроваджувати прикладні інформаційні системи з використанням новітніх ІКТ на основі проектного менеджменту тощо."
+			],
+			"p3": "Фахівці з прикладних інформаційних систем покликані реалізовувати всі етапи створення програмного забезпечення для замовника: визначення та аналізу вимог замовника, проектування архітектури програмної системи, детального проектування, конструювання, комплексування програмних засобів, їх тестування, інсталяції, підтримання, супроводження, а також сприяти своєчасній заміні/виведенню програмних засобів з експлуатації.",
+			"label4": "реалiзацiя",
+			"title4": "Галузі знань прикладних інформаційних систем",
+			"li4": [
+				"У сфері математичної підготовки:",
+				"Дискретна математика.",
+				"Основи математичної логіки.",
+				"Методи обчислень.",
+				"Графи та дерева.",
+				"Теорія ймовірностей.",
+				"Алгебраїчні структури.",
+				"Чисельні методи.",
+				"Методи оптимізації.",
+				"Дослідження операцій.",
+				"Математичне моделювання тощо",
+				"У сфері програмування:",
+				"Алгоритми і структури даних.",
+				"Основи програмування.",
+				"Об’єктно-орієнтоване програмування.",
+				"Паралельні та розподілені обчислення тощо.",
+				"У сфері технологій і процесів розроблення програмного забезпечення:",
+				"Методології розроблення та супроводження програмного забезпечення.",
+				"Аналіз вимог до ПЗ.",
+				"Проектування архітектури.",
+				"Розроблення веб-застосунків.",
+				"Розроблення сервіс-орієнтованих та клієнт-серверних застосунків.",
+				"Тестування програмного забезпечення.",
+				"Сучасні методології розробки.",
+				"У сфері технічної підготовки:",
+				"Архітектура, будова та функціонування обчислювальних систем.",
+				"Основи сучасних операційних систем."
+			],
+			"p4": "Професійна діяльність випускників пов’язана з індустрією інформаційних технологій та розробленням, упровадженням і супроводженням конкурентоздатного прикладного програмного забезпечення  у сферах",
+			"li5": [
+				"Економіки",
+				"У загальному вигляді інформаційні технології в економіці визначають як сукупність дій над економічною інформацією для прийняття оптимальних ефективних рішень.",
+				"Видавництва",
+				"Для підприємств видавничо-поліграфічної галузі є важливим застосування інформаційних технологій для підвищення ефективності процесів підготовлення та виготовлення поліграфічної продукції, організації документообігу, адміністрування та поширення видань.",
+				"Юриспруденції",
+				"Розробники займаються розробленням і супроводженням спеціальних програм для організації якісної і швидкої роботи юристів, відбулося широке поширення правових довідкових систем. Їх тепер нараховують більше сотні, приміром Ліга Закон.",
+				"Менеджменту",
+				"За допомогою прикладних інформаційних систем збирають і впорядковують дані програмних систем, які забезпечують вироблення рішень на основі автоматизації бізнес-процесів у сфері керування, інформаційні системи менеджменту сприяють більшій оперативності та конкретності менеджерської діяльності, забезпечують своєчасність усіх управлінських розрахунків, контроль за виконанням управлінських рішень і зворотній зв’язок, удосконалення менеджерської діяльності підприємств та підвищення на цій основі ефективності їх роботи.",
+				"Дизайну",
+				"Ця предметна сфера використовує різні графічні програми і редактори, що є частиною інформаційної культури, полегшуючи роботу дизайнерів, сприяючи появі інновацій і нових напрямків стилю у дизайні третього тисячоліття.",
+				"Туризму",
+				"Ця індустрія пристосована для впровадження сучасних інформаційних технологій, тому зазнала значного впливу науково-технічного прогресу. Охоплює інформаційні системи менеджменту, глобальні системи бронювання, мультимедіа, інтегровані комунікаційні мережі для забезпечення діяльності туризму тощо.",
+				"Медицини",
+				"Новітні інформаційні технології все більше використовують у галузі охорони здоров’я, що буває зручним, а часом просто необхідним. Завдяки цьому медицина, в тому числі і нетрадиційна, набуває сьогодні абсолютно нових рис. У багатьох медичних дослідженнях обов’язково використовують комп’ютер і прикладне програмне забезпечення. Цей процес супроводжують суттєвими змінами в медичній теорії та практиці, що пов’язані з внесенням коректив, як на етапі підготовки медичних працівників, так і для медичної практики.",
+				"Освіти",
+				"Процес навчання, особливо дистанційного, обов’язково використовує прикладне програмне забезпечення. В освіті інформатизація відкриває доступ до світових інформаційних ресурсів; зменшує залежність викладання і навчання від місцезнаходження учасників процесу та часових рамок; сприяє вдосконаленню форм і змісту навчального процесу, підвищенню ефективності засвоєння навчального матеріалу та персоніфікації навчання, інтеграції навчальної, дослідницької та виробничої діяльності; значно збільшує обсяги ресурсів, якими студенти можуть користуватися за межами аудиторії; сприяє підвищенню мотивації до навчання та розвитку креативного мислення. Інтерактивність і мультимедійна наочність сприяють кращому поданню і засвоєнню інформації."
+			],
+			"label5": "теми дипломних",
+			"title5": "Можливі теми дипломних студентських робіт",
+			"label6": "стандарт",
+			"title6": "Завантажити стандарт зі спеціальності",
+			"p6": "Кафедра прикладних інформаційних систем здійснює навчання студентів за програмою «Прикладні інформаційні системи» спеціальності 122 «Комп’ютерні науки та інформаційні технології» галузі знань 12 «Інформаційні технології».",
+			"p7": "Фахівці з прикладних інформаційних систем орієнтовані на використання новітніх інформаційно-комунікаційних технологій для прийняття управлінських рішень у різних прикладних сферах і галузях національної економіки."
+		},
+		"news": {
+			"news": "Новини",
+			"event": "Події",
+			"email": "Підпишись на E-mail новини"
 		}
 	},
 	"eng": {
@@ -20916,6 +21067,157 @@ module.exports = {
 					"aud": "213"
 				}
 			]
+		},
+		"progress": {
+			"top": {
+				"head1": "Program development department",
+				"head3": "applied information systems",
+				"head4": "Faculty of Information Technology",
+				"head5": "Kyiv National Taras Shevchenko University"
+			},
+			"bottom": {
+				"head5": "The approximate plan for the development of the Department of Applied Information Systems was prepared by the Head of the Department of Applied Information Systems of the Faculty of Information Technologies of the Taras Shevchenko National University of Kyiv, Candidate of Technical Sciences, Doctor of Economics, Professor",
+				"author": "Pleskach Valentina Leonidovna",
+				"head4": "Discussed and adopted as the basis of the decision of the department (extract from the minutes of the session of the department number 13 of April 24, 2017)"
+			},
+			"file": {
+				"caution": "Caution",
+				"p": "Time Killer"
+			}
+		},
+		"contacts": {
+			"name": "Name",
+			"nameVar": "Vsevolod",
+			"msg": "Message",
+			"msgVar": "When will the internet be in the building?",
+			"map": " street Vandy Vasilevskaya, 24, Kyiv, Ukraine"
+		},
+		"applicants": {
+			"case0": {
+				"li1": "Provision of non-resident students of the first courses in places in hostels, with access to the Internet, WI-FI.",
+				"li2": "Providing 45% of the first-year student's rate of scholarship",
+				"li3": "Constant holding of joint scientific and practical conferences, student projects, organization of round tables, seminars, competitions among student youth.",
+				"li4": "Developed system of sports sections from many sports. There is a gym, a stadium, a sports ground; possibility to enter the national teams of the university."
+			},
+			"case1": {
+				"li1": "Applicant brings to the application",
+				"li2": "A document on full secondary education (original or certified copy thereof);",
+				"li3": "Certificate of three subjects: Ukrainian language and literature, mathematics, physics or foreign language of choice;",
+				"li4": "Medical certificate in the form 086-U;",
+				"li5": "6 color photos in the size of 3x4 cm;",
+				"li6": "A copy of the certificate of assignment of the identification code, three postal envelopes with stamps, a cover folder, envelopes of formats А4, А5;",
+				"li7": "A passport, a military ticket or a certificate of affiliation to the compulsory section and documents giving the right to benefits, the accuser submits personally within the terms defined for the submission of documents"
+			},
+			"case2": {
+				"head": "For more information, please contact us!",
+				"label": "Contact"
+			},
+			"content": {
+				"title": "Applicants",
+				"p1": "The Department of Applied Information Systems invites to study entrants for the program \"Applied Programming\" of specialty 122 \"Computer Science\"",
+				"p2": [
+					"Double Degree Program",
+					"Higher Business School in",
+					"Dombrowa (POLAND)",
+					" and a computer school ",
+					"LIDES (GREAT BRITAIN)",
+					" (faculties of computer science, management)",
+					"Term of studies: daytime - 4 years and others."
+				],
+				"caseHead": [
+					"Our priorities",
+					"Reception of documents",
+					"Additional Information"
+				],
+				"finish": [
+					"We are waiting for you in pairs! ",
+					"See again",
+					"Back",
+					"Finish",
+					"Next"
+				]
+			}
+		},
+		"about": {
+			"pop": "View/Download",
+			"label1": "In general",
+			"title1": "Department of Applied Information Systems",
+			"p1": "The Department of Applied Information Systems was founded in June 2016. The department has highly qualified teachers who have significant pedagogical and practical business experience in the development and application of modern information technologies. Applied systems are software tools designed to solve applied problems and focus on the automation of specific types of economic or other activities.",
+			"label2": "More detail",
+			"title2": "Applied Information Systems",
+			"p2": "Applied information systems is a promising area of ​​study and activity, as it touches upon the introduction of innovations in various activities. It is a transdisciplinary science that brings together diverse sectors and fields of activity and knowledge. Applied information systems are the engine, without which it is virtually impossible to solve the problem of applied spheres, such as IT in the agrarian sector, power engineering, engineering, finance and banking, and so on. For example, the economy is now transformed into a digital form of organization of work in the network, and enterprises become virtual. Now it's impossible to imagine a specialist in the field of information technology without a computer, network, information system. After all, virtually every application is executed with the help of certain software products: 1C, Galaxy, Sail, Auditor Expert, Risk Project, Master MRP and others. During their studies, students receive basic knowledge in the field of analytics, development and implementation of programs in the field of economics and finance, medicine, education, science, etc.",
+			"label3": "What you will learn",
+			"title3": "Our teachers will teach",
+			"li3": [
+				"Apply methods and software tools for optimization to solve applied problems",
+				"develop decision support systems",
+				"to solve tasks of forecasting and modeling of processes of various application spheres and to carry out their system analysis",
+				"develop database (repositories) of data or knowledge, choose their control systems",
+				"to develop mathematical model solutions of complex processes",
+				"to develop and implement applied information systems using the latest ICTs on the basis of project management, etc."
+			],
+			"p3": "Applicant Information Systems specialists are called to implement all stages of software development for the customer: definition and analysis of customer requirements, designing of the software system architecture, detailed design, construction, software integration, testing, installation, maintenance, support, and timely replacement / withdrawal of software from the operation.",
+			"label4": "realization",
+			"title4": "Areas of knowledge of applied information systems",
+			"li4": [
+				"In the field of mathematical training:",
+				"Discrete Math.",
+				"Fundamentals of Mathematical Logic.",
+				"Methods of calculation.",
+				"Counters and trees.",
+				"Probability theory.",
+				"Algebraic structures.",
+				"Numerical Methods.",
+				"Optimization methods.",
+				"Operations Research.",
+				"Mathematical modeling and others like that",
+				"In the field of programming:",
+				"Algorithms and data structures.",
+				"Fundamentals of programming.",
+				"Object-Oriented Programming.",
+				"Parallel and distributed computing, etc.",
+				"In the field of technology and software development processes:",
+				"Software development and maintenance methodologies.",
+				"Analysis of software requirements.",
+				"Architectural design.",
+				"Web application development.",
+				"Development of service-oriented and client-server applications.",
+				"Software testing.",
+				"Modern development methodologies.",
+				"In the field of technical training:",
+				"Architecture, structure and functioning of computing systems.",
+				"Basics of modern operating systems."
+			],
+			"p4": "The professional activities of graduates are related to the information technology industry and the development, implementation and maintenance of competitive application software in the areas of",
+			"li5": [
+				"Economics",
+				"In general terms, information technology in the economy is defined as a set of actions on economic information for the adoption of optimal effective solutions.",
+				"Publishers",
+				"For enterprises in the publishing industry it is important to use information technology to improve the efficiency of the processes of preparation and manufacturing of printing products, organization of document circulation, administration and distribution of publications.",
+				"Jurisprudence",
+				"Developers are engaged in the development and maintenance of special programs for the organization of high-quality and fast work of lawyers, widespread legal reference systems. They now number more than a hundred, for example, the League of Law.",
+				"Management",
+				"With the help of applied information systems, data is collected and organized by software systems that provide decision-making on the basis of automation of business processes in the field of management, information management systems contribute to greater operational efficiency and specificity of managerial activities, ensure the timeliness of all managerial calculations, control over the implementation of managerial decisions and reverse communication, improvement of the managerial activity of enterprises and increase the efficiency of their work on this basis.",
+				"Design",
+				"This subject area uses a variety of graphic programs and editors that are part of the information culture, facilitating the work of designers, contributing to the emergence of innovations and new trends in the design style of the third millennium.",
+				"Tourism",
+				"This industry is adapted for the introduction of modern information technologies, and therefore has had a significant impact on scientific and technological progress. Includes information management systems, global booking systems, multimedia, integrated communication networks for tourism activities, etc.",
+				"Medicine",
+				"The latest information technologies are increasingly used in the healthcare sector, which is convenient and sometimes necessary. Due to this, medicine, including non-traditional, acquires absolutely new features today. Many medical studies necessarily use a computer and application software. This process is accompanied by significant changes in medical theory and practice related to making adjustments, both at the stage of training of medical staff and for medical practice.",
+				"Education",
+				"The learning process, especially remote, necessarily uses application software. In education, informatization opens up access to world information resources; reduces the dependence of teaching and learning from the location of process participants and the time frame; promotes the improvement of the forms and content of the educational process, increasing the efficiency of the learning of learning material and personalization of education, the integration of educational, research and production activities; greatly increases the resources that students can use outside the audience; contributes to increased motivation for learning and the development of creative thinking. Interactivity and multimedia visibility contribute to better submission and assimilation of information."
+			],
+			"label5": "topics of the diploma",
+			"title5": "Possible topics for graduate student work",
+			"label6": "standard",
+			"title6": "Download the standard from the specialty",
+			"p6": "The Department of Applied Information Systems provides students with the program \"Applied Information  Systems\" of the specialty 122 \"Computer Science and Information Technologies\" of the field of knowledge 12 \"Information Technologies\".",
+			"p7": "Applicant information systems specialists are focused on the use of the latest information and communication technologies for making managerial decisions in various applied spheres and branches of the national economy."
+		},
+		"news": {
+			"news": "News",
+			"event": "Events",
+			"email": "Subscribe to E-mail news"
 		}
 	}
 };
@@ -20939,9 +21241,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(90);
 
-var _Globals = __webpack_require__(137);
+var _Globals = __webpack_require__(138);
 
-var _functions = __webpack_require__(141);
+var _functions = __webpack_require__(137);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21113,9 +21415,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactBootstrap = __webpack_require__(90);
 
-var _Globals = __webpack_require__(137);
+var _Globals = __webpack_require__(138);
 
-var _index = __webpack_require__(141);
+var _index = __webpack_require__(137);
 
 __webpack_require__(515);
 
@@ -22961,7 +23263,7 @@ exports = module.exports = __webpack_require__(59)(undefined);
 
 
 // module
-exports.push([module.i, "/*\n   Animation example, for spinners\n*/\n.animate-spin {\n  -moz-animation: spin 2s infinite linear;\n  -o-animation: spin 2s infinite linear;\n  -webkit-animation: spin 2s infinite linear;\n  animation: spin 2s infinite linear;\n  display: inline-block;\n}\n@-moz-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@-webkit-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@-o-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@-ms-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n", ""]);
+exports.push([module.i, "/*\n   Animation example, for spinners\n*/\n.animate-spin {\n  -moz-animation: spin 7s infinite linear;\n  -o-animation: spin 7s infinite linear;\n  -webkit-animation: spin 7s infinite linear;\n  animation: spin 7s infinite linear;\n  display: inline-block;\n}\n@-moz-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@-webkit-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@-o-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@-ms-keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes spin {\n  0% {\n    -moz-transform: rotate(0deg);\n    -o-transform: rotate(0deg);\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n\n  100% {\n    -moz-transform: rotate(359deg);\n    -o-transform: rotate(359deg);\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n", ""]);
 
 // exports
 
@@ -27601,7 +27903,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _colors = __webpack_require__(92);
 
-var _colorManipulator = __webpack_require__(139);
+var _colorManipulator = __webpack_require__(140);
 
 var _spacing = __webpack_require__(347);
 
@@ -27660,7 +27962,7 @@ var _lodash = __webpack_require__(344);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _colorManipulator = __webpack_require__(139);
+var _colorManipulator = __webpack_require__(140);
 
 var _lightBaseTheme = __webpack_require__(345);
 
@@ -30245,7 +30547,7 @@ DropdownButton.propTypes = propTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_objectWithoutProperties__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_array_from__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_array_from__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_array_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_classCallCheck__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_classCallCheck___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_helpers_classCallCheck__);
@@ -48807,7 +49109,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _chainFunction = __webpack_require__(538);
+var _chainFunction = __webpack_require__(537);
 
 var _chainFunction2 = _interopRequireDefault(_chainFunction);
 
@@ -48823,7 +49125,7 @@ var _warning = __webpack_require__(19);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _ChildMapping = __webpack_require__(554);
+var _ChildMapping = __webpack_require__(553);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49123,7 +49425,7 @@ var _propTypes = __webpack_require__(7);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _events = __webpack_require__(548);
+var _events = __webpack_require__(547);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -49131,11 +49433,11 @@ var _keycode = __webpack_require__(91);
 
 var _keycode2 = _interopRequireDefault(_keycode);
 
-var _FocusRipple = __webpack_require__(543);
+var _FocusRipple = __webpack_require__(542);
 
 var _FocusRipple2 = _interopRequireDefault(_FocusRipple);
 
-var _TouchRipple = __webpack_require__(546);
+var _TouchRipple = __webpack_require__(545);
 
 var _TouchRipple2 = _interopRequireDefault(_TouchRipple);
 
@@ -49494,7 +49796,7 @@ exports.default = EnhancedButton;
 
 exports.__esModule = true;
 
-var _setStatic = __webpack_require__(559);
+var _setStatic = __webpack_require__(558);
 
 var _setStatic2 = _interopRequireDefault(_setStatic);
 
@@ -49515,7 +49817,7 @@ exports.default = setDisplayName;
 
 exports.__esModule = true;
 
-var _getDisplayName = __webpack_require__(556);
+var _getDisplayName = __webpack_require__(555);
 
 var _getDisplayName2 = _interopRequireDefault(_getDisplayName);
 
@@ -49580,7 +49882,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _Paper = __webpack_require__(540);
+var _Paper = __webpack_require__(539);
 
 var _Paper2 = _interopRequireDefault(_Paper);
 
@@ -49589,8 +49891,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _Paper2.default;
 
 /***/ }),
-/* 536 */,
-/* 537 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49598,7 +49899,7 @@ exports.default = _Paper2.default;
 
 exports.__esModule = true;
 
-var _from = __webpack_require__(138);
+var _from = __webpack_require__(139);
 
 var _from2 = _interopRequireDefault(_from);
 
@@ -49609,7 +49910,7 @@ exports.default = function (arr) {
 };
 
 /***/ }),
-/* 538 */
+/* 537 */
 /***/ (function(module, exports) {
 
 
@@ -49635,7 +49936,7 @@ module.exports = function chain(){
 
 
 /***/ }),
-/* 539 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49675,7 +49976,7 @@ var keyOf = function keyOf(oneKeyObj) {
 module.exports = keyOf;
 
 /***/ }),
-/* 540 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -49833,7 +50134,7 @@ exports.default = Paper;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 541 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50005,7 +50306,7 @@ exports.default = SvgIcon;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 542 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50184,7 +50485,7 @@ exports.default = CircleRipple;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 543 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50242,7 +50543,7 @@ var _transitions = __webpack_require__(75);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _ScaleIn = __webpack_require__(544);
+var _ScaleIn = __webpack_require__(543);
 
 var _ScaleIn2 = _interopRequireDefault(_ScaleIn);
 
@@ -50390,7 +50691,7 @@ exports.default = FocusRipple;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 544 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50444,7 +50745,7 @@ var _TransitionGroup = __webpack_require__(530);
 
 var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-var _ScaleInChild = __webpack_require__(545);
+var _ScaleInChild = __webpack_require__(544);
 
 var _ScaleInChild2 = _interopRequireDefault(_ScaleInChild);
 
@@ -50525,7 +50826,7 @@ exports.default = ScaleIn;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 545 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50702,7 +51003,7 @@ exports.default = ScaleInChild;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 546 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -50736,7 +51037,7 @@ var _inherits2 = __webpack_require__(3);
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
-var _toArray2 = __webpack_require__(537);
+var _toArray2 = __webpack_require__(536);
 
 var _toArray3 = _interopRequireDefault(_toArray2);
 
@@ -50760,11 +51061,11 @@ var _TransitionGroup = __webpack_require__(530);
 
 var _TransitionGroup2 = _interopRequireDefault(_TransitionGroup);
 
-var _dom = __webpack_require__(547);
+var _dom = __webpack_require__(546);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _CircleRipple = __webpack_require__(542);
+var _CircleRipple = __webpack_require__(541);
 
 var _CircleRipple2 = _interopRequireDefault(_CircleRipple);
 
@@ -51019,7 +51320,7 @@ exports.default = TouchRipple;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 547 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51049,7 +51350,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 548 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51094,7 +51395,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 549 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51191,7 +51492,7 @@ var EventConstants = {
 module.exports = EventConstants;
 
 /***/ }),
-/* 550 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51216,14 +51517,14 @@ module.exports = EventConstants;
 
 
 
-var EventConstants = __webpack_require__(549);
+var EventConstants = __webpack_require__(548);
 var EventPluginUtils = __webpack_require__(93);
 var EventPropagators = __webpack_require__(57);
 var SyntheticUIEvent = __webpack_require__(58);
-var TouchEventUtils = __webpack_require__(551);
-var ViewportMetrics = __webpack_require__(140);
+var TouchEventUtils = __webpack_require__(550);
+var ViewportMetrics = __webpack_require__(141);
 
-var keyOf = __webpack_require__(539);
+var keyOf = __webpack_require__(538);
 var topLevelTypes = EventConstants.topLevelTypes;
 
 var isStartish = EventPluginUtils.isStartish;
@@ -51369,7 +51670,7 @@ module.exports = createTapEventPlugin;
 
 
 /***/ }),
-/* 551 */
+/* 550 */
 /***/ (function(module, exports) {
 
 /**
@@ -51417,7 +51718,7 @@ module.exports = TouchEventUtils;
 
 
 /***/ }),
-/* 552 */
+/* 551 */
 /***/ (function(module, exports) {
 
 module.exports = function(lastTouchEvent, clickTimestamp) {
@@ -51428,11 +51729,11 @@ module.exports = function(lastTouchEvent, clickTimestamp) {
 
 
 /***/ }),
-/* 553 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {var invariant = __webpack_require__(10);
-var defaultClickRejectionStrategy = __webpack_require__(552);
+var defaultClickRejectionStrategy = __webpack_require__(551);
 
 var alreadyInjected = false;
 
@@ -51454,14 +51755,14 @@ should be injected by the application.'
   alreadyInjected = true;
 
   __webpack_require__(56).injection.injectEventPluginsByName({
-    'TapEventPlugin':       __webpack_require__(550)(shouldRejectClick)
+    'TapEventPlugin':       __webpack_require__(549)(shouldRejectClick)
   });
 };
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 554 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51558,7 +51859,7 @@ function mergeChildMappings(prev, next) {
 }
 
 /***/ }),
-/* 555 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51566,11 +51867,11 @@ function mergeChildMappings(prev, next) {
 
 exports.__esModule = true;
 
-var _createEagerElementUtil = __webpack_require__(561);
+var _createEagerElementUtil = __webpack_require__(560);
 
 var _createEagerElementUtil2 = _interopRequireDefault(_createEagerElementUtil);
 
-var _isReferentiallyTransparentFunctionComponent = __webpack_require__(558);
+var _isReferentiallyTransparentFunctionComponent = __webpack_require__(557);
 
 var _isReferentiallyTransparentFunctionComponent2 = _interopRequireDefault(_isReferentiallyTransparentFunctionComponent);
 
@@ -51586,7 +51887,7 @@ var createFactory = function createFactory(type) {
 exports.default = createFactory;
 
 /***/ }),
-/* 556 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51608,7 +51909,7 @@ var getDisplayName = function getDisplayName(Component) {
 exports.default = getDisplayName;
 
 /***/ }),
-/* 557 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51625,7 +51926,7 @@ var isClassComponent = function isClassComponent(Component) {
 exports.default = isClassComponent;
 
 /***/ }),
-/* 558 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51633,7 +51934,7 @@ exports.default = isClassComponent;
 
 exports.__esModule = true;
 
-var _isClassComponent = __webpack_require__(557);
+var _isClassComponent = __webpack_require__(556);
 
 var _isClassComponent2 = _interopRequireDefault(_isClassComponent);
 
@@ -51647,7 +51948,7 @@ exports.default = isReferentiallyTransparentFunctionComponent;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 559 */
+/* 558 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51666,7 +51967,7 @@ var setStatic = function setStatic(key, value) {
 exports.default = setStatic;
 
 /***/ }),
-/* 560 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51684,7 +51985,7 @@ var _wrapDisplayName = __webpack_require__(533);
 
 var _wrapDisplayName2 = _interopRequireDefault(_wrapDisplayName);
 
-var _createEagerFactory = __webpack_require__(555);
+var _createEagerFactory = __webpack_require__(554);
 
 var _createEagerFactory2 = _interopRequireDefault(_createEagerFactory);
 
@@ -51731,7 +52032,7 @@ exports.default = shouldUpdate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 561 */
+/* 560 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51771,8 +52072,8 @@ var createEagerElementUtil = function createEagerElementUtil(hasKey, isReferenti
 exports.default = createEagerElementUtil;
 
 /***/ }),
-/* 562 */,
-/* 563 */
+/* 561 */,
+/* 562 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -51826,7 +52127,7 @@ var _transitions = __webpack_require__(75);
 
 var _transitions2 = _interopRequireDefault(_transitions);
 
-var _colorManipulator = __webpack_require__(139);
+var _colorManipulator = __webpack_require__(140);
 
 var _EnhancedButton = __webpack_require__(531);
 
@@ -52264,7 +52565,7 @@ exports.default = RaisedButton;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 564 */
+/* 563 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -52275,7 +52576,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _RaisedButton = __webpack_require__(563);
+var _RaisedButton = __webpack_require__(562);
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
@@ -52284,6 +52585,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _RaisedButton2.default;
 
 /***/ }),
+/* 564 */,
 /* 565 */,
 /* 566 */,
 /* 567 */,
@@ -53909,7 +54211,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactTapEventPlugin = __webpack_require__(553);
+var _reactTapEventPlugin = __webpack_require__(552);
 
 var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
 
@@ -53929,6 +54231,8 @@ var _Container = __webpack_require__(614);
 
 var _Container2 = _interopRequireDefault(_Container);
 
+var _functions = __webpack_require__(137);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53940,13 +54244,27 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var App = function (_Component) {
     _inherits(App, _Component);
 
-    function App() {
+    function App(props) {
         _classCallCheck(this, App);
 
-        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+        _this.state = {
+            translate: (0, _functions.getLanguage)((0, _functions.getCookie)("language")).contacts || (0, _functions.getLanguage)("ua").contacts
+        };
+        (0, _reactTapEventPlugin2.default)();
+
+        return _this;
     }
 
     _createClass(App, [{
+        key: 'changeLang',
+        value: function changeLang() {
+            this.setState({
+                translate: (0, _functions.getLanguage)((0, _functions.getCookie)("language")).contacts
+            });
+        }
+    }, {
         key: 'send',
         value: function send(name, msg, email) {
             var xhr = new XMLHttpRequest();
@@ -53966,15 +54284,16 @@ var App = function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            (0, _reactTapEventPlugin2.default)();
+            var translate = this.state.translate;
+
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(_Header2.default, null),
+                _react2.default.createElement(_Header2.default, { changeLang: this.changeLang.bind(this) }),
                 _react2.default.createElement(
                     'div',
                     { className: 'contact-main-containar' },
-                    _react2.default.createElement(_Container2.default, { send: this.send }),
+                    _react2.default.createElement(_Container2.default, { send: this.send, translate: translate }),
                     _react2.default.createElement(_Map2.default, null)
                 ),
                 _react2.default.createElement(_Footer2.default, null)
@@ -54021,7 +54340,7 @@ var _TextField = __webpack_require__(583);
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _RaisedButton = __webpack_require__(564);
+var _RaisedButton = __webpack_require__(563);
 
 var _RaisedButton2 = _interopRequireDefault(_RaisedButton);
 
@@ -54065,14 +54384,16 @@ var CallBack = function (_Component) {
         value: function render() {
             var _this2 = this;
 
-            var send = this.props.send;
+            var _props = this.props,
+                send = _props.send,
+                translate = _props.translate;
 
             return _react2.default.createElement(
                 'div',
                 null,
                 _react2.default.createElement(_TextField2.default, {
-                    hintText: '\u0412\u0441\u0435\u0432\u043E\u043B\u043E\u0434',
-                    floatingLabelText: '\u0406\u043C\'\u044F',
+                    hintText: translate.nameVar,
+                    floatingLabelText: translate.name,
                     fullWidth: true,
                     name: 'Name',
                     underlineFocusStyle: { borderColor: _colors.orangeA700 },
@@ -54095,8 +54416,8 @@ var CallBack = function (_Component) {
                 }),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(_TextField2.default, {
-                    hintText: '\u041A\u043E\u043B\u0438 \u0431\u0443\u0434\u0435 \u0456\u043D\u0442\u0435\u0440\u043D\u0435\u0442 \u0432 \u043A\u043E\u0440\u043F\u0443\u0441\u0456?',
-                    floatingLabelText: '\u041F\u043E\u0432\u0456\u0434\u043E\u043C\u043B\u0435\u043D\u043D\u044F',
+                    hintText: translate.msgVar,
+                    floatingLabelText: translate.msg,
                     underlineFocusStyle: { borderColor: _colors.orangeA700 },
                     underlineStyle: { borderColor: _colors.blueA400 },
                     floatingLabelFocusStyle: { color: _colors.orangeA700 },
@@ -54183,6 +54504,8 @@ var Contact = function (_Component) {
                 marginBottom: '-5px',
                 color: _colors.blueA400
             };
+            var translate = this.props.translate;
+
             return _react2.default.createElement(
                 _reactBootstrap.Row,
                 { className: 'vertical-line', style: { marginTop: "25px", paddingTop: '20px' } },
@@ -54190,7 +54513,8 @@ var Contact = function (_Component) {
                     _reactBootstrap.Col,
                     { md: 4, xs: 4 },
                     _react2.default.createElement(_place2.default, { style: style }),
-                    ' \u0432\u0443\u043B. \u0412\u0430\u043D\u0434\u0438 \u0412\u0430\u0441\u0438\u043B\u0435\u0432\u0441\u044C\u043A\u043E\u0457, 24, \u041A\u0438\u0457\u0432, \u0423\u043A\u0440\u0430\u0457\u043D\u0430'
+                    ' ',
+                    translate.map
                 ),
                 _react2.default.createElement(
                     _reactBootstrap.Col,
@@ -54200,7 +54524,7 @@ var Contact = function (_Component) {
                     _react2.default.createElement(
                         'span',
                         { style: { marginRight: "5px" } },
-                        ' 0969239667,'
+                        ' 0969239667 ,'
                     ),
                     _react2.default.createElement(
                         'span',
@@ -54271,13 +54595,15 @@ var Container = function (_Component) {
     _createClass(Container, [{
         key: 'render',
         value: function render() {
-            var send = this.props.send;
+            var _props = this.props,
+                send = _props.send,
+                translate = _props.translate;
 
             return _react2.default.createElement(
                 _reactBootstrap.Well,
                 { bsSize: 'large' },
-                _react2.default.createElement(_CallBack2.default, { send: send }),
-                _react2.default.createElement(_Contact2.default, null)
+                _react2.default.createElement(_CallBack2.default, { send: send, translate: translate }),
+                _react2.default.createElement(_Contact2.default, { translate: translate })
             );
         }
     }]);

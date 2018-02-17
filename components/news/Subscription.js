@@ -48,6 +48,8 @@ export default class Subscription extends Component {
     }
 
     render(){
+        const { translate } = this.props;
+
         const styles = {
             button: {
                 position: 'relative',
@@ -64,7 +66,7 @@ export default class Subscription extends Component {
             <div>
                 <TextField
                     hintText="example@gmail.com"
-                    floatingLabelText="Підпишись на E-mail новини"
+                    floatingLabelText={ translate.email }
                     fullWidth={true}
                     name="Email"
                     underlineFocusStyle={{borderColor:orangeA700}}

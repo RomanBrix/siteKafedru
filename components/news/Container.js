@@ -30,6 +30,7 @@ export default class Container extends Component {
         return  a.id > b.id ?  -1 : 1;
     }
     render() {
+        const { translate } = this.props;
         const sortedNews = NEWS.sort(this.sorted);        
         const newsCont = sortedNews.map((item, index)=>{
         const { toggle } = this.state;
@@ -77,26 +78,16 @@ export default class Container extends Component {
             });
         return (
             <div >
-                {/* <Col xs={6} md={6} className='Social'>
-                    <Panel header='Читай новини в FaceBook' className="bluePanel">
-                        <Well bsSize="large"><h4>Залишайся з нами!</h4>
-                        <div id="fb-root">
-                        <FB/>
-                        </div>
-                        </Well>
-                    </Panel>
-                </Col>  xs={6} md={6}*/}
                 <Col className="pad50">
-                    {/* <Panel header='' className="bluePanel"> */}
-                        <Subscription/>
+                    <Subscription translate={ translate }/>
                 </Col>
                 <div className="btns-render">
                     <span onClick={()=>{
                         this.changeToggle(true)
-                    }}>Новини</span>
+                    }}>{ translate.news }</span>
                     <span onClick={()=>{
                         this.changeToggle(false)
-                    }}>Події</span>
+                    }}>{ translate.event }</span>
                 </div>
                 { toggle ?
                     <div className="news-container">

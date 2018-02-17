@@ -5,11 +5,11 @@ import CallBack from './CallBack';
 
 export default class Container extends Component {
     render(){
-        const { send } = this.props;
+        const { send, translate } = this.props;
         return(
             <Well bsSize="large">
-                <CallBack send={ send }/>
-                <Contact/>
+                <CallBack send={ send } translate={translate}/>
+                <Contact translate={ translate }/>
             </Well>
         )
     }

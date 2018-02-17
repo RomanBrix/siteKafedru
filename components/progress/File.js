@@ -8,12 +8,13 @@ import {
 export default class File extends Component {
 
     render(){
+        const { translate } = this.props;
         const style = {
             marginTop: '-7px'
         }
         const popoverRight = (
-            <Popover id="popover-positioned-right" title="Осторожно!"  style={style}>
-                <strong> Убивает время.</strong>
+            <Popover id="popover-positioned-right" title={`${translate.caution}!`}  style={style}>
+                <strong> {translate.p}.</strong>
             </Popover>
         );
         return (

@@ -44,34 +44,36 @@ export default class Container extends Component {
     };
 
     getStepContent(stepIndex) {
+        const { translate } = this.props;
+
         switch (stepIndex) {
             case 0:
                 return (
                     <ListGroup>
-                        <ListGroupItem>Забезпечення іногородніх студентів першого курсам місцями в гуртожитках, з доступом до мережі Internet, WI-FI.</ListGroupItem>
-                        <ListGroupItem>Забезпечення 45% рейтинга студентів першого курсу бюджетної форми навчання стипендією</ListGroupItem>
-                        <ListGroupItem>Постійне проведення спільних науково - практичних конференцій, виконання студентських проектів, організація «круглих столів», семінарів, олімпіад серед студентської молоді.</ListGroupItem>
-                        <ListGroupItem>Розвинена система спортивних секцій з багатьох видів спорту. Діють спортзал, стадіон, спортивний майданчик; можливість увійти до складу збірних команд університету.</ListGroupItem>
+                        <ListGroupItem>{translate.case0.li1}</ListGroupItem>
+                        <ListGroupItem>{translate.case0.li2}</ListGroupItem>
+                        <ListGroupItem>{translate.case0.li3}</ListGroupItem>
+                        <ListGroupItem>{translate.case0.li4}</ListGroupItem>
                     </ListGroup>
                 );
             case 1:
                 return (
                     <ListGroup>
-                        <ListGroupItem header="До заяви абітурієнт приносить:" bsStyle="info"/>
-                        <ListGroupItem>Документ про повну загальну середню освіту (оригінал або його завірену копію);</ListGroupItem>
-                        <ListGroupItem bsStyle="warning">Сертифікат з трьох предметів: українська мова та література, математика, фізика або іноземна мова за вибором;</ListGroupItem>
-                        <ListGroupItem>Медичну довідку за формою 086-У;</ListGroupItem>
-                        <ListGroupItem>6 кольорових фото розміром 3х4 см;</ListGroupItem>
-                        <ListGroupItem>Копію довідки про присвоєння ідентифікаційного коду, три поштових конверти з марками, папку-обкладинку, конверти форматів А4, А5;</ListGroupItem>
-                        <ListGroupItem>Паспорт, військовий квиток або посвідчення про приписку до призовної дільниці та документи, що дають право на пільги, вступник пред'являє особисто в терміни, визначені для подання документів</ListGroupItem>
+                        <ListGroupItem header={`${translate.case1.li1}:`} bsStyle="info"/>
+                        <ListGroupItem>{translate.case1.li2}</ListGroupItem>
+                        <ListGroupItem bsStyle="warning">{translate.case1.li3}</ListGroupItem>
+                        <ListGroupItem>{translate.case1.li4}</ListGroupItem>
+                        <ListGroupItem>{translate.case1.li5}</ListGroupItem>
+                        <ListGroupItem>{translate.case1.li6}</ListGroupItem>
+                        <ListGroupItem>{translate.case1.li7}</ListGroupItem>
                     </ListGroup>
                     );
             case 2:
                 return (
                     <div className='lastStep'>
-                        <h2>За додатковою інформацією - зв'яжіться з нами!</h2>
+                        <h2>{translate.case2.head}</h2>
                         <RaisedButton
-                            label={'Зв\'язатися'}
+                            label={translate.case2.label}
                             secondary={true}
                             style={{margin: 12}}
                             onTouchTap={()=>{
@@ -85,42 +87,47 @@ export default class Container extends Component {
         }
     }
     render(){
-        console.log();
+        const { translate } = this.props;
         const {finished, stepIndex} = this.state;
         const contentStyle = {margin: '0 16px'};
+        const content = translate.content;
+
         return(
             <div className="container">
-
                 <Card className="root_card">
-                    <CardTitle title="Абітурієнтам" subtitle="" />
+                    <CardTitle title={content.title} subtitle="" />
                     <CardText>
                         <p>
-                            Кафедра прикладних інформаційних систем
-                            запрошує на навчання абітурієнтів на навчальну програму «Прикладне програмування » спеціальності 122 «Комп'ютерні науки»
+                            {content.p1}
                         </p>
                         <hr/>
                         <p>
-                            <b>Програма подвійних дипломів</b>: вища школа
-                            бізнеса в <b>Домброві (ПОЛЬША)</b> та комп'ютерна школа <b>ЛІДС (ВЕЛИКОБРИТАНИЯ)</b> (факультети информатики, менеджмента)
-                            <br/><em>Термін навчання: денна - 4 роки та інші.</em>
+                            <b>{content.p2[0]}</b>
+                            :{content.p2[1]}
+                            <b>{content.p2[2]}</b>
+                            {content.p2[3]}
+                            <b>{content.p2[4]}</b>
+                            {content.p2[5]}
+                            <br/>
+                            <em>{content.p2[6]}</em>
                         </p>
                         <Stepper activeStep={stepIndex}>
                             <Step>
-                                <StepButton onClick={()=>{ this.setState({stepIndex: 0})}}>Наші пріоритети</StepButton>
+                                <StepButton onClick={()=>{ this.setState({stepIndex: 0})}}>{content.caseHead[0]}</StepButton>
                             </Step>
                             <Step>
-                                <StepButton onClick={()=>{ this.setState({stepIndex: 1})}}>Прийом документів</StepButton>
+                                <StepButton onClick={()=>{ this.setState({stepIndex: 1})}}>{content.caseHead[1]}</StepButton>
                             </Step>
                             <Step>
-                                <StepButton onClick={()=>{ this.setState({stepIndex: 2})}}>Додадотка інформація</StepButton>
+                                <StepButton onClick={()=>{ this.setState({stepIndex: 2})}}>{content.caseHead[2]}</StepButton>
                             </Step>
                         </Stepper>
                         <div style={contentStyle}>
                             {finished ? (
                                 <div className="end">
-                                    <p>Чекаємо Вас на парах! <Mood/> </p>
+                                    <p>{content.finish[0]}<Mood/> </p>
                                     <RaisedButton
-                                        label={'Продивитись ще раз'}
+                                        label={content.finish[1]}
                                         primary={true}
                                         fullWidth={true}
                                         onTouchTap={(event)=>{
@@ -135,13 +142,13 @@ export default class Container extends Component {
                                     {this.getStepContent(stepIndex)}
                                     <div style={{marginTop: 12}}>
                                         <FlatButton
-                                            label="Назад"
+                                            label={content.finish[2]}
                                             disabled={stepIndex === 0}
                                             onTouchTap={this.handlePrev.bind(this)}
                                             style={{marginRight: 12}}
                                         />
                                         <RaisedButton
-                                            label={stepIndex === 2 ? 'Закінчити' : 'Далі'}
+                                            label={stepIndex === 2 ? content.finish[3] : content.finish[4]}
                                             primary={true}
                                             onTouchTap={this.handleNext.bind(this)}
                                         />

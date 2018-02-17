@@ -19,12 +19,12 @@ export default class CallBack extends Component {
 
     }
     render(){
-        const { send } = this.props;
+        const { send, translate } = this.props;
         return(
             <div>
                 <TextField
-                    hintText="Всеволод"
-                    floatingLabelText="Ім'я"
+                    hintText={translate.nameVar}
+                    floatingLabelText={translate.name}
                     fullWidth={true}
                     name="Name"
                     underlineFocusStyle={{borderColor:orangeA700}}
@@ -45,8 +45,8 @@ export default class CallBack extends Component {
                     ref="EMAIL"
                 /><br/>
                 <TextField
-                    hintText="Коли буде інтернет в корпусі?"
-                    floatingLabelText="Повідомлення"
+                    hintText={translate.msgVar}
+                    floatingLabelText={translate.msg}
                     underlineFocusStyle={{borderColor:orangeA700}}
                     underlineStyle={{borderColor: blueA400}}
                     floatingLabelFocusStyle={{color: orangeA700}}
