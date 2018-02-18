@@ -12,12 +12,14 @@
     "webpack": "^2.5.1"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "bootstrap": "^3.3.7",
     "css-loader": "^0.28.1",
     "file-loader": "^0.11.1",
+    "jquery": "^3.3.1",
     "material-ui": "^0.18.1",
     "node-sass": "^4.5.3",
-    "nuka-carousel": "^2.3.0",
+    "nuka-carousel": "^3.0.1",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",

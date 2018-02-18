@@ -11,14 +11,17 @@ import { NEWS } from '../../Data';
 
 export default class Hello extends Component {
 
-    sorted(a,b){
-        return  a.id > b.id ?  -1 : 1;
-    }
+    // sorted(a,b){
+    //     return  a.id > b.id ?  -1 : 1;
+    // }
 
     render(){
-        const {translate} = this.props;
-        const sortedNews = NEWS.sort(this.sorted);
-        const newsContainer = sortedNews.map((item, index)=>{
+        const {translate, language, news} = this.props;
+        // const sortedNews = NEWS.sort(this.sorted);
+        let numm = 0;
+        language === "ua" ? numm = 0 : numm = 1;
+
+        const newsContainer = news[numm].map((item, index)=>{
             if (index > 1) return;
             let newText = "";
             if(item.text.length > 75){
@@ -32,7 +35,7 @@ export default class Hello extends Component {
                     <h4>{ item.date }</h4>
                     <p>{ newText }</p>
                     {/* <div className="btn-next"></div> */}
-                    <Button bsStyle="warning" href={"news.html"}>Читати далi</Button>
+                    <Button bsStyle="warning" href={"news.html"}>{translate.btnMore}</Button>
                 </div>
             )
         })

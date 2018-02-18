@@ -16,7 +16,7 @@ export default class Container extends Component {
     constructor(props){
         super(props);
         this.state = {
-            toggle: true
+            toggle: true,
         }
     }
 
@@ -26,14 +26,18 @@ export default class Container extends Component {
         })
     }
 
-    sorted(a,b){
-        return  a.id > b.id ?  -1 : 1;
-    }
+    // sorted(a,b){
+    //     return  a.id > b.id ?  -1 : 1;
+    // }
     render() {
-        const { translate } = this.props;
-        const sortedNews = NEWS.sort(this.sorted);        
-        const newsCont = sortedNews.map((item, index)=>{
+        const { translate, news, events, language } = this.props;
         const { toggle } = this.state;
+
+        // const sortedNews = NEWS.sort(this.sorted);
+        let numm = 0;
+        language === "ua" ? numm = 0 : numm = 1;
+
+        const newsCont = news[numm].map((item, index)=>{
         return(
             <div className="news" key={index}>
                 <div className="logo">
@@ -43,25 +47,25 @@ export default class Container extends Component {
                     <h2>{item.title}</h2>
                     <h3>{item.date}</h3>
                     <p>{item.text}</p>
-                    <p>{item.end}
-                    {item.file ? 
-                        <a href={item.file} target="_blank"> ТУТ </a>
+                    <p>{item.endof}
+                    {item.file ?
+                        <a href={item.file} target="_blank"> + </a>
                         : ""
                     }
                     </p>
-                    
+
                 </div>
             </div>
-        ) 
+        )
         });
-        const { toggle } = this.state;  
+        // const { toggle } = this.state;
         const active = {
             backgroundColor: '#343f64',
             color: 'white'
         }    
           
-        const sortedEvents = EVENTS.sort(this.sorted);
-        const eventsCont = sortedEvents.map((item, index)=>{
+        // const sortedEvents = EVENTS.sort(this.sorted);
+        const eventsCont = events[numm].map((item, index)=>{
         
             return(
                 <div className="news" key={index}>
@@ -70,8 +74,18 @@ export default class Container extends Component {
                     </div>
                     <div className="info">
                         <h2>{item.title}</h2>
+                        {
+                            item.date ?
+                                <h3>{item.date}</h3>
+                                : ""
+                        }
                         <p>{item.text}</p>
-                        <p>{item.end}</p>
+                        <p>{item.endof}
+                            {item.file ?
+                                <a href={item.file} target="_blank"> + </a>
+                                : ""
+                            }
+                        </p>
                     </div>
                 </div>
             ) 

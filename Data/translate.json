@@ -18,7 +18,8 @@
     "main":{
         "head":"Вітаємо Вас на кафедрі прикладних інформаційних систем!",
       "paragraph": "Щиро вітаю Вас, шановний студент, на кафедрі Прикладних Інформаційних Систем. Сподіваюсь, що наше спільне майбутнє принесе Вам справжнє естетичне задоволення від вивчення передових інформаційних технологій",
-      "btn": "Про кафедру"
+      "btn": "Про кафедру",
+      "btnMore": "Читати далi"
     },
     "lecturers":{
       "intro":{
@@ -365,7 +366,8 @@
     "main":{
       "head":"Welcome to the Department of Applied Information Systems!",
       "paragraph": "Sincerely congratulate you, dear student, on the Department of Applied Information Systems. I hope that our common future brings you real aesthetic pleasure from learning advanced information technology",
-      "btn": "About the department"
+      "btn": "About the department",
+      "btnMore": "More"
     },
     "lecturers":{
       "intro":{
