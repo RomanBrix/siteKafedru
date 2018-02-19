@@ -66,7 +66,7 @@ export default class Container extends Component {
           
         // const sortedEvents = EVENTS.sort(this.sorted);
         const eventsCont = events[numm].map((item, index)=>{
-        
+        console.log(item);
             return(
                 <div className="news" key={index}>
                     <div className="logo">

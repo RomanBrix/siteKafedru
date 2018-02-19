@@ -12,7 +12,8 @@ module.exports= {
         public_lesson: './public_lesson.js',
         progress: './progress.js',
         about: './about.js',
-        applicants: './applicants.js'
+        applicants: './applicants.js',
+        'admin/admin':'./admin.js'
     },
     output: {
         path: path.join(__dirname, 'public'),

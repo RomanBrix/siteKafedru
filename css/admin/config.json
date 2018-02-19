@@ -1,0 +1,120 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "3fce1eca43f917c8f23e532749abae5d",
+      "css": "user-circle-o",
+      "code": 62142,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ivdkw88f6me1kxmgrk3qzv6jkgxhbuj7",
+      "css": "lock",
+      "code": 59392,
+      "src": "modernpics"
+    },
+    {
+      "uid": "36ef9feb0754335302784521267a9ad4",
+      "css": "crown-plus",
+      "code": 59461,
+      "src": "fontelico"
+    },
+    {
+      "uid": "032bd8bbd70adf90ead98b6813bfe446",
+      "css": "newspaper",
+      "code": 61930,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "28f308aa0a07a67433f54c089c400d82",
+      "css": "gift",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8u06eo32zy61toyj78of6mi7inn3xlcl",
+      "css": "lock-open",
+      "code": 59394,
+      "src": "modernpics"
+    },
+    {
+      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
+      "css": "spin2",
+      "code": 59441,
+      "src": "fontelico"
+    },
+    {
+      "uid": "2d3be3e856fc1e4ac067590d2ded1b07",
+      "css": "plus-squared-alt",
+      "code": 61846,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4ba33d2607902cf690dd45df09774cb0",
+      "css": "plus-circled",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1a5cfa186647e8c929c2b17b9fc4dac1",
+      "css": "plus-squared",
+      "code": 61694,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e99461abfef3923546da8d745372c995",
+      "css": "cog",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "484b4ad2058d17849f205c4054b6f315",
+      "css": "cog-1",
+      "code": 59397,
+      "src": "linecons"
+    },
+    {
+      "uid": "3a89ddb1c81111c15d6c4e26cc3c546a",
+      "css": "cog-outline",
+      "code": 59398,
+      "src": "typicons"
+    },
+    {
+      "uid": "6083c8aa5e3345476a24a28ac1afaa61",
+      "css": "cog-2",
+      "code": 59399,
+      "src": "elusive"
+    },
+    {
+      "uid": "981c9f3d44fd4fd6b37c0b5a981334ce",
+      "css": "clock",
+      "code": 59400,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "ce5e29aa5208417700e7f7012a236c00",
+      "css": "undo",
+      "code": 59401,
+      "src": "iconic"
+    },
+    {
+      "uid": "e8f6d72f569992b88bddde2d85c4b44a",
+      "css": "noun_90366_cc",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M400 48C205.6 48 48 205.6 48 400 48 594.4 205.6 752 400 752S752 594.4 752 400C752 205.6 594.4 48 400 48ZM400 696C236.5 696 104 563.5 104 400S236.5 104 400 104 696 236.5 696 400 563.5 696 400 696ZM400 136C254.2 136 136 254.2 136 400S254.2 664 400 664 664 545.8 664 400 545.8 136 400 136ZM514.6 536H286.6L311.8 416.6 264 440.3 272 400.7 320.1 378.4 354.3 216H426.1L399.7 340.7 440 320.3 432 360.6 391.3 380.6 370.7 480H527.3L514.6 536Z",
+        "width": 800
+      },
+      "search": [
+        "noun_90366_cc"
+      ]
+    }
+  ]
+}
